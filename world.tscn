@@ -1510,7 +1510,3 @@ polygon = PoolVector2Array( 0, 0, 1, 193, 64, 193, 64, 224, 160, 224, 160, 271, 
 
 [node name="player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 447, 444 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 561, 0 )
-limit_left = 0
