@@ -33,7 +33,7 @@ position = Vector2( 5.96046e-08, -18 )
 scale = Vector2( 0.0481481, 0.0467982 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite"]
