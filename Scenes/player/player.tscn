@@ -1,0 +1,44 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/player/Side Idle/idle2.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/player/Side Idle/idle4.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/player/Side Run/run1.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/player/Side Idle/idle3.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/player/Side Run/run2.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/player/Side Idle/idle1.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/player/Side Run/run3.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/player/Side Run/run4.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/player/Side Run/run5.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/player/Side Run/run6.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "side_run",
+"speed": 10.0
+} ]
+
+[node name="player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 5.96046e-08, -18 )
+scale = Vector2( 0.0481481, 0.0467982 )
+frames = SubResource( 1 )
+animation = "idle"
+frame = 2
+playing = true
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedSprite"]
+position = Vector2( 0, 391.648 )
+scale = Vector2( 5.93407, 5.93407 )
+current = true
+limit_left = 0
+limit_top = 0

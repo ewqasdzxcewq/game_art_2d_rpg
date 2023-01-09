@@ -14,6 +14,10 @@ config/name="World"
 run/main_scene="res://Last Tile Set.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1025
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
