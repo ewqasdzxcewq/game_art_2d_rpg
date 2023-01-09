@@ -11,7 +11,6 @@ config_version=4
 [application]
 
 config/name="World"
-run/main_scene="res://world.tscn"
 config/icon="res://icon.png"
 
 [display]
