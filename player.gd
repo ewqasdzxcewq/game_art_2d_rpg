@@ -32,4 +32,4 @@ func _physics_process(delta):
 		motion = motion.move_toward(Vector2.ZERO, friction * delta)
 
 	move_and_collide(motion)
-	print(input)
+	#print(input)

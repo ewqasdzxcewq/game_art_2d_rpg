@@ -1,13 +1,13 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Scenes/tileset/Tileset16x16/DesertTilemapBlankBackground.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/tileset/Woodlands/Woodlands Tileset WIP (v2).png" type="Texture" id=2]
+[ext_resource path="res://Scenes/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/tileset/Tileset16x16/DesertTilemapBlankBackground.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/tileset/Woodlands/preview.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/player/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/tileset/Woodlands/Woodlands Tileset WIP (v2).png" type="Texture" id=4]
 
 [sub_resource type="TileSet" id=6]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 16, 80, 16, 16 )
@@ -23,7 +23,7 @@
 
 [sub_resource type="TileSet" id=7]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 176, 144, 48, 48 )
@@ -48,7 +48,7 @@
 
 [sub_resource type="TileSet" id=8]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 64, 48, 80 )
@@ -73,7 +73,7 @@
 
 [sub_resource type="TileSet" id=9]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 112, 16, 32 )
@@ -87,7 +87,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "DesertTilemapBlankBackground.png 1"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 16, 112, 16, 32 )
@@ -101,7 +101,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "DesertTilemapBlankBackground.png 2"
-2/texture = ExtResource( 1 )
+2/texture = ExtResource( 2 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 32, 112, 16, 32 )
@@ -117,7 +117,7 @@
 
 [sub_resource type="TileSet" id=11]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 48, 48, 144, 16 )
@@ -138,7 +138,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "DesertTilemapBlankBackground.png 1"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 192, 32, 16, 32 )
@@ -159,7 +159,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "DesertTilemapBlankBackground.png 2"
-2/texture = ExtResource( 1 )
+2/texture = ExtResource( 2 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 176, 64, 48, 32 )
@@ -173,7 +173,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "DesertTilemapBlankBackground.png 3"
-3/texture = ExtResource( 1 )
+3/texture = ExtResource( 2 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 48, 64, 128, 16 )
@@ -196,7 +196,7 @@
 
 [sub_resource type="TileSet" id=10]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 48, 96, 48, 48 )
@@ -219,7 +219,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "DesertTilemapBlankBackground.png 1"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 144, 96, 16, 16 )
@@ -235,7 +235,7 @@
 
 [sub_resource type="TileSet" id=12]
 0/name = "DesertTilemapBlankBackground.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 192, 48 )
@@ -260,7 +260,7 @@
 
 [sub_resource type="TileSet" id=2]
 0/name = "Woodlands Tileset WIP (v2).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 48, 48 )
@@ -285,7 +285,7 @@
 
 [sub_resource type="TileSet" id=19]
 0/name = "Woodlands Tileset WIP (v2).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 48, 0, 160, 48 )
@@ -308,7 +308,7 @@
 
 [sub_resource type="TileSet" id=4]
 0/name = "Woodlands Tileset WIP (v2).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 208, 368, 80, 96 )
@@ -322,7 +322,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Woodlands Tileset WIP (v2).png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 4 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 48, 0, 160, 48 )
@@ -343,7 +343,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Woodlands Tileset WIP (v2).png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 4 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 48, 48, 48, 48 )
@@ -357,7 +357,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "Woodlands Tileset WIP (v2).png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 4 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 304, 208, 160 )
@@ -435,7 +435,7 @@
 
 [sub_resource type="TileSet" id=14]
 0/name = "Woodlands Tileset WIP (v2).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 416, 32, 80, 80 )
@@ -456,7 +456,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Woodlands Tileset WIP (v2).png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 4 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 416, 16, 80, 16 )
@@ -477,7 +477,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Woodlands Tileset WIP (v2).png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 4 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 496, 32, 16, 80 )
@@ -498,7 +498,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "Woodlands Tileset WIP (v2).png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 4 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 400, 112, 112, 32 )
@@ -519,7 +519,7 @@
 3/shapes = [  ]
 3/z_index = 0
 4/name = "Woodlands Tileset WIP (v2).png 4"
-4/texture = ExtResource( 2 )
+4/texture = ExtResource( 4 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 400, 32, 16, 80 )
@@ -540,7 +540,7 @@
 4/shapes = [  ]
 4/z_index = 0
 5/name = "Woodlands Tileset WIP (v2).png 5"
-5/texture = ExtResource( 2 )
+5/texture = ExtResource( 4 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 416, 0, 80, 16 )
@@ -561,7 +561,7 @@
 5/shapes = [  ]
 5/z_index = 0
 6/name = "Woodlands Tileset WIP (v2).png 6"
-6/texture = ExtResource( 2 )
+6/texture = ExtResource( 4 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 384, 32, 16, 96 )
@@ -582,7 +582,7 @@
 6/shapes = [  ]
 6/z_index = 0
 7/name = "Woodlands Tileset WIP (v2).png 7"
-7/texture = ExtResource( 2 )
+7/texture = ExtResource( 4 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 512, 32, 16, 96 )
@@ -603,7 +603,7 @@
 7/shapes = [  ]
 7/z_index = 0
 8/name = "Woodlands Tileset WIP (v2).png 8"
-8/texture = ExtResource( 2 )
+8/texture = ExtResource( 4 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 496, 16, 16, 16 )
@@ -617,7 +617,7 @@
 8/shapes = [  ]
 8/z_index = 0
 9/name = "Woodlands Tileset WIP (v2).png 9"
-9/texture = ExtResource( 2 )
+9/texture = ExtResource( 4 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 400, 16, 16, 16 )
@@ -633,7 +633,7 @@
 
 [sub_resource type="TileSet" id=17]
 0/name = "Woodlands Tileset WIP (v2).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 400, 0, 112, 144 )
@@ -656,7 +656,7 @@
 
 [sub_resource type="TileSet" id=15]
 1/name = "Woodlands Tileset WIP (v2).png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 4 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 176, 160, 32, 32 )
@@ -670,7 +670,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Woodlands Tileset WIP (v2).png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 4 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 182, 96, 16, 64 )
@@ -684,7 +684,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "Woodlands Tileset WIP (v2).png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 4 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 189, 96, 14, 64 )
@@ -700,7 +700,7 @@
 
 [sub_resource type="TileSet" id=16]
 0/name = "Woodlands Tileset WIP (v2).png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 112, 48, 48, 16 )
@@ -723,7 +723,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Woodlands Tileset WIP (v2).png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 4 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 96, 64, 16, 32 )
@@ -746,7 +746,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Woodlands Tileset WIP (v2).png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 4 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 160, 48, 16, 16 )
@@ -860,7 +860,7 @@ tile_data = PoolIntArray( 131226, 0, 0, 131227, 0, 1, 131228, 0, 1, 131229, 0, 1
 tile_set = SubResource( 18 )
 format = 1
 
-[node name="player" parent="." instance=ExtResource( 4 )]
+[node name="player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 447, 444 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
