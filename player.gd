@@ -1,35 +1,59 @@
 extends KinematicBody2D
 
-const acceleration = 25
-const max_speed = 200
-const friction = 80
+const acceleration = 500
+const max_speed = 80
+const friction = 800
 
-var motion = Vector2()
+enum {
+	MOVE,
+	ROLL,
+	ATTACK
+}
+
+var state = MOVE
+var velocity = Vector2.ZERO
+
+onready var animation_player = $AnimationPlayer
+onready var animation_tree = $AnimationTree
+onready var animation_state = animation_tree.get("parameters/playback")
+
+func _ready():
+	animation_tree.active = true
 
 func _physics_process(delta):
-	var input = Vector2() #right == 1,0  left  == -1, 0  x == 1,0  y == 0,1
-	input.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	input.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	input = input.normalized()
+	match state:
+		MOVE:
+			move_state(delta)
+		ROLL:
+			pass
+		ATTACK:
+			attack_state(delta)
 	
-	if input != Vector2.ZERO:
-		if input.x == 1:
-			$AnimatedSprite.flip_h = false
-			$AnimatedSprite.play("side_run")
-		elif input.x == -1: 
-			$AnimatedSprite.flip_h = true
-			$AnimatedSprite.play("side_run")
-		elif input.y == 1:
-			$AnimatedSprite.play("side_run") #down
-		elif input.y == -1:
-			$AnimatedSprite.play("side_run") # up
-			
-		motion += input * acceleration * delta
-		motion = motion.clamped(max_speed * delta)
-		
-	else:
-		$AnimatedSprite.play("idle")
-		motion = motion.move_toward(Vector2.ZERO, friction * delta)
+func move_state(delta):
+	var input_vector = Vector2.ZERO
+	
+	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	input_vector += input_vector.normalized()
 
-	move_and_collide(motion)
-	#print(input)
+	if input_vector != Vector2.ZERO:
+		animation_tree.set("parameters/idle/blend_position", input_vector)
+		animation_tree.set("parameters/run/blend_position", input_vector)
+		animation_tree.set("parameters/attack/blend_position", input_vector)
+		animation_state.travel("run")
+		velocity = velocity.move_toward(input_vector * max_speed, acceleration * delta)
+	else:
+		animation_state.travel("idle")
+		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+
+	velocity = move_and_slide(velocity)
+
+	if Input.is_action_just_pressed("ui_accept"):
+		state = ATTACK
+	
+func attack_state(delta):
+	velocity = Vector2.ZERO
+	animation_state.travel("attack")
+	
+func attack_animation_finished():
+	state = MOVE
