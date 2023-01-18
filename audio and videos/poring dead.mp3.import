@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/poring dead.mp3-072cd9968ea695d9781955c6d966154a.mp3str"
+
+[deps]
+
+source_file="res://audio and videos/poring dead.mp3"
+dest_files=[ "res://.import/poring dead.mp3-072cd9968ea695d9781955c6d966154a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

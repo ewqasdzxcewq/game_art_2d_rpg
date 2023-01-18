@@ -1,0 +1,12 @@
+[
+    {"name": "Iruga", "message": "Who are you?"},
+    {"name": "Stranger", "message": "I am the Shinobi of the Payon"},
+    {"name": "Shinobi", "message": "I scout the town of Payon to survey the porings in the town"},
+    {"name": "Iruga", "message": "My quest is to defeat the source what makes the poring corrupted"},
+    {"name": "Shinobi", "message": "If you want to save the porings and the people you must defeat the Corrupted King Poring"},
+    {"name": "Iruga", "message": "Where is the Corrupted King can be found?"},
+    {"name": "Shinobi", "message": "The King can be found at the shoguns palace"},
+    {"name": "Shinobi", "message": "But be careful there are lots of corrupted porings in the payon"},
+    {"name": "Iruga", "message": "Thanks for the information"},
+    {"name": "Shinobi", "message": "Good luck"}
+]

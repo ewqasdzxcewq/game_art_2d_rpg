@@ -1,0 +1,17 @@
+[
+    {"name": "Shrine Monk", "message": "Greetings warrior"},
+    {"name": "Shrine Monk", "message": "My name is KangKum"},
+    {"name": "KangKum", "message": "Welcome to our shrine"},
+    {"name": "Iruga", "message": "Thank you"},
+    {"name": "Iruga", "message": "I have met a monk in morroc and gave me a power to revive myself"},
+    {"name": "KangKum", "message": "The monk you have met in Morroc is one our brother"},
+    {"name": "KangKum", "message": "His name is TingTingTang"},
+    {"name": "KangKum", "message": "He is the one who bless you with Toad Blessing"},
+    {"name": "Iruga", "message": ". . ."},
+    {"name": "Iruga", "message": "Why me?"},
+    {"name": "KangKum", "message": "The Almighty Toad told us to help you in our dreams"},
+    {"name": "KangKum", "message": "we saw you that you are the one who can save the people from the devil porings"},
+    {"name": "Iruga", "message": "I'll try my best to help"},
+    {"name": "KangKum", "message": "Good luck Warrior"},
+    {"name": "KangKum", "message": "May the Toad guide you"}
+]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/Main Menu/Iruga.png" type="Texture" id=1]
+[ext_resource path="res://UI/Main Menu/Start Game.png" type="Texture" id=2]
+[ext_resource path="res://UI/Main Menu/Exit.png" type="Texture" id=3]
+[ext_resource path="res://UI/Main Menu/MainMenu.gd" type="Script" id=4]
+[ext_resource path="res://UI/Main Menu/How_to_play.png" type="Texture" id=5]
+[ext_resource path="res://audio and videos/Sekiro OST - Sekiro, The One-armed Wolf.wav" type="AudioStream" id=6]
+
+[sub_resource type="Theme" id=1]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="IRUGA" type="Sprite" parent="ColorRect"]
+position = Vector2( 336, 102 )
+scale = Vector2( 0.147692, 0.147692 )
+texture = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 230.0
+margin_top = 211.0
+margin_right = 422.0
+margin_bottom = 283.0
+alignment = 1
+
+[node name="Start Game" type="Button" parent="VBoxContainer"]
+margin_top = 2.0
+margin_right = 192.0
+margin_bottom = 22.0
+focus_neighbour_top = NodePath("../Quit Game")
+theme = SubResource( 1 )
+icon = ExtResource( 2 )
+icon_align = 1
+expand_icon = true
+
+[node name="How to play" type="Button" parent="VBoxContainer"]
+margin_top = 26.0
+margin_right = 192.0
+margin_bottom = 46.0
+focus_neighbour_top = NodePath("../Quit Game")
+theme = SubResource( 1 )
+icon = ExtResource( 5 )
+icon_align = 1
+expand_icon = true
+
+[node name="Quit Game" type="Button" parent="VBoxContainer"]
+margin_top = 50.0
+margin_right = 192.0
+margin_bottom = 70.0
+focus_neighbour_bottom = NodePath("../Start Game")
+icon = ExtResource( 3 )
+icon_align = 1
+expand_icon = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_Start_Game_pressed"]
+[connection signal="pressed" from="VBoxContainer/How to play" to="." method="_on_How_to_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit Game" to="." method="_on_Quit_Game_pressed"]

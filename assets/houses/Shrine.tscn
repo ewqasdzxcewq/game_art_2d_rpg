@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="StreamTexture" id=102]
+flags = 4
+load_path = "res://.import/Shrine.png-050b769d5748e0f443fba1ae7b1a0d45.stex"
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 148.034, 107.296 )
+
+[node name="Shrine" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1, -143 )
+scale = Vector2( 1.12621, 1.15643 )
+texture = SubResource( 102 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.51625, -93.4432 )
+scale = Vector2( 1.12621, 1.15643 )
+shape = SubResource( 1 )
