@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://UI/Pause.gd" type="Script" id=1]
-[ext_resource path="res://UI/Main Menu/Start Game.png" type="Texture" id=2]
 
 [node name="Pause" type="CanvasLayer"]
 layer = 50
@@ -31,13 +30,3 @@ margin_top = -92.0
 margin_right = 92.0
 margin_bottom = 92.0
 alignment = 1
-
-[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer"]
-margin_top = 82.0
-margin_right = 184.0
-margin_bottom = 102.0
-icon = ExtResource( 2 )
-icon_align = 1
-expand_icon = true
-
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/Button" to="Pause" method="_on_Button_pressed"]

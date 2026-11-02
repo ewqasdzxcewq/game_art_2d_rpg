@@ -6,7 +6,6 @@ var invincible = false setget set_invincible
 
 onready var timer = $Timer
 onready var collision_shape = $CollisionShape2D
-onready var stats = $Stats
 
 signal invincibility_started
 signal invincibility_ended

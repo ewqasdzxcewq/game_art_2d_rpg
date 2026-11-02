@@ -38,6 +38,15 @@ margin_bottom = 71.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Message"
 
+[node name="Continue" type="Label" parent="DialogBox"]
+margin_left = 390.0
+margin_top = 62.0
+margin_right = 500.0
+margin_bottom = 80.0
+custom_colors/font_color = Color( 0.25, 0.16, 0.1, 1 )
+align = 2
+text = "Space"
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
