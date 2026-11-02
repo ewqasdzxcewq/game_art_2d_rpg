@@ -1,4 +1,4 @@
-[gd_scene load_steps=148 format=2]
+[gd_scene load_steps=149 format=2]
 
 [ext_resource path="res://test world 2.gd" type="Script" id=1]
 [ext_resource path="res://assets/houses/House3.tscn" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://mobs/king deviling/King Deviling.tscn" type="PackedScene" id=23]
 [ext_resource path="res://npc/monk/Monk.tscn" type="PackedScene" id=24]
 [ext_resource path="res://audio and videos/Wadaiko Matsuriza - Kabuki Gomen-Jyo [Japanese drums].wav" type="AudioStream" id=25]
+[ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=26]
 
 [sub_resource type="TileSet" id=102]
 0/name = "DesertTilemapBlankBackground.png 0"
@@ -3073,6 +3074,8 @@ shape = SubResource( 115 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 25 )
 autoplay = true
+
+[node name="Pause" parent="." instance=ExtResource( 26 )]
 
 [editable path="Middleground/Tree/Tree2"]
 [editable path="Middleground/Houses/House1"]

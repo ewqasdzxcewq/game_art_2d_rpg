@@ -14,6 +14,9 @@ func play_dialogue():
 		return
 	
 	dialogue = load_dialogue()
+	if typeof(dialogue) != TYPE_ARRAY or dialogue.empty():
+		_end_dialogue()
+		return
 
 	turn_off_player()
 	is_dialogue_active = true
@@ -25,26 +28,39 @@ func _input(event):
 	if not is_dialogue_active:
 		return
 	
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("ui_accept") or event.is_action_pressed("use"):
 		next_line()
 
 func next_line():
 	current_dialogue += 1
 	
-	if current_dialogue >= len(dialogue):
-		$Timer.start()
-		$DialogBox.visible = false
-		turn_on_player()
+	if typeof(dialogue) != TYPE_ARRAY or current_dialogue >= dialogue.size():
+		_end_dialogue()
 		return
 
-	$DialogBox/Name.text = dialogue[current_dialogue]['name']
-	$DialogBox/Message.text = dialogue[current_dialogue]['message']
+	var line = dialogue[current_dialogue]
+	if typeof(line) != TYPE_DICTIONARY or not line.has("name") or not line.has("message"):
+		_end_dialogue()
+		return
+	$DialogBox/Name.text = line["name"]
+	$DialogBox/Message.text = line["message"]
 
 func load_dialogue():
 	var file = File.new()
-	if file.file_exists(dialogue_file):
-		file.open(dialogue_file, file.READ)
-		return parse_json(file.get_as_text())
+	if dialogue_file == "" or not file.file_exists(dialogue_file):
+		return []
+	if file.open(dialogue_file, file.READ) != OK:
+		return []
+	var data = parse_json(file.get_as_text())
+	file.close()
+	if typeof(data) != TYPE_ARRAY:
+		return []
+	return data
+
+func _end_dialogue():
+	$DialogBox.visible = false
+	$Timer.start()
+	turn_on_player()
 
 func _on_Timer_timeout():
 	is_dialogue_active = false
