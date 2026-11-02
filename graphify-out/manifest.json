@@ -1,0 +1,1928 @@
+{
+  "UI/dialogue/dialogues/ending.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662414,
+    "ast_hash": "47873603d11800336417e7a25041f51f",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/monk na nasa shrine1.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662504,
+    "ast_hash": "5f5370f40efe7bc359e8d84df3d16d9f",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/monk na nasa shrine2.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.466254,
+    "ast_hash": "64d7d0c2ad0e31f3efab9f551b409ce9",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/monk1.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662564,
+    "ast_hash": "e7289c873557ed351cce896bcd60629b",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/ninja scout.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662585,
+    "ast_hash": "92aa0a7d3296d6ed11e9e965178ec2ad",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/npc na nasa forest.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.46626,
+    "ast_hash": "612eed400bc5f786d7a6ca5214f2e941",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/npc1.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662626,
+    "ast_hash": "b886f0e06924c370361ccf5336437e69",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogues/npc2.json": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.466264,
+    "ast_hash": "0bc57f2c1603c85633508a8ab3cb38e9",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Back_to_main_menu.png": {
+    "mtime": 1793598388.358693,
+    "seen": 1793598481.4662657,
+    "ast_hash": "e5c24e3e3d1bf5939f46402495b77344",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Blood Effect.png": {
+    "mtime": 1793598388.358693,
+    "seen": 1793598481.466267,
+    "ast_hash": "642be6a7dfc2ec92c0b5887b9b966c75",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/EXIT_Blood_Effect.png": {
+    "mtime": 1793598388.36349,
+    "seen": 1793598481.4662688,
+    "ast_hash": "aea938c4638812b5706114f2a9ac1b65",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Exit.png": {
+    "mtime": 1793598388.36349,
+    "seen": 1793598481.4662702,
+    "ast_hash": "2e0ba359a25ffe3509032f2fcf1d9a9d",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/How_to_play.png": {
+    "mtime": 1793598388.36349,
+    "seen": 1793598481.466272,
+    "ast_hash": "cfaa7503affc555b395cbacfe7f2ce44",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Iruga.png": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662735,
+    "ast_hash": "25909e3d4d45c6839aaa4470e5a287db",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Main Menu.png": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662752,
+    "ast_hash": "3629d6f0748443da4b3d932b2de5d035",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Start Game With Blood.png": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662766,
+    "ast_hash": "4d37c24f4a667516bc21005805fad08b",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Start Game.png": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662774,
+    "ast_hash": "25c39d68dd9d3ce626bf05c6ce57d147",
+    "semantic_hash": ""
+  },
+  "UI/Main Menu/Untitled.png": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662786,
+    "ast_hash": "45299cd4ee3db6dfd40ba8076062540b",
+    "semantic_hash": ""
+  },
+  "UI/dialogue/dialogue_box.png": {
+    "mtime": 1793598388.3654983,
+    "seen": 1793598481.4662797,
+    "ast_hash": "73c406b2ddcf0108ef645111084d83a4",
+    "semantic_hash": ""
+  },
+  "UI/player ui/HeartUIEmpty.png": {
+    "mtime": 1793598388.381133,
+    "seen": 1793598481.4662807,
+    "ast_hash": "74a6458b511a29aafc3fa06afdc64ce3",
+    "semantic_hash": ""
+  },
+  "UI/player ui/HeartUIFull.png": {
+    "mtime": 1793598388.3846946,
+    "seen": 1793598481.4662814,
+    "ast_hash": "dd1d660948112a09fa498fd8b122e5fd",
+    "semantic_hash": ""
+  },
+  "assets/Tree/Untitled-1-removebg-preview.png": {
+    "mtime": 1793598388.3872252,
+    "seen": 1793598481.4662828,
+    "ast_hash": "59d79aa9c60682091cb6b3ad9f28615d",
+    "semantic_hash": ""
+  },
+  "assets/Tree/Untitled5-removebg-preview.png": {
+    "mtime": 1793598388.3872252,
+    "seen": 1793598481.4662848,
+    "ast_hash": "a7a20af45d1a73c5b712e854310ee2ff",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Arrow Keys.png": {
+    "mtime": 1793598388.3872252,
+    "seen": 1793598481.4662857,
+    "ast_hash": "15c74327d4e643ebc8a47967157d0cd4",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Attack.png": {
+    "mtime": 1793598388.3872252,
+    "seen": 1793598481.4662867,
+    "ast_hash": "7eb257dc0cf8e91431821930749412d1",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/CP Blue0001.png": {
+    "mtime": 1793598388.393727,
+    "seen": 1793598481.4662876,
+    "ast_hash": "5344c651c19170e5b70849498d84f559",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/CheckPoint.png": {
+    "mtime": 1793598388.393727,
+    "seen": 1793598481.4662883,
+    "ast_hash": "c9dea2d2182512189b5aca0a21e165e7",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Dash.png": {
+    "mtime": 1793598388.3957558,
+    "seen": 1793598481.4662895,
+    "ast_hash": "eafdd52c7ef6be0d82767f08434f66dd",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Game Tuitorial.png": {
+    "mtime": 1793598388.3957558,
+    "seen": 1793598481.4662902,
+    "ast_hash": "024b3f6c830642a65c3c2c23e39c0466",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Move.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.4662912,
+    "ast_hash": "5182ee86977887f0a2638036c84eab40",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/SPACE.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.466292,
+    "ast_hash": "da43f899c017e384948fdbee9ea90c73",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Shift.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.466293,
+    "ast_hash": "a59b54f67f64e046d61e413d333ee2eb",
+    "semantic_hash": ""
+  },
+  "assets/Tuitorial/Skip.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.4662943,
+    "ast_hash": "e6ddc9defbd66c337331ccf9f63f1821",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0001.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.466295,
+    "ast_hash": "5344c651c19170e5b70849498d84f559",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0002.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.466296,
+    "ast_hash": "663ba419083c2570ab2176ac618b9aeb",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0003.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.466297,
+    "ast_hash": "dda6451014fe9631574f09ebcf15f3fc",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0004.png": {
+    "mtime": 1793598388.3972607,
+    "seen": 1793598481.4662979,
+    "ast_hash": "5cd1c18c5df47ef99ce735396777560b",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0005.png": {
+    "mtime": 1793598388.409066,
+    "seen": 1793598481.4662988,
+    "ast_hash": "fcb7e79e21f07c158b8038629857dee9",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0006.png": {
+    "mtime": 1793598388.409066,
+    "seen": 1793598481.4662995,
+    "ast_hash": "c6de62b18612cc2bc2f9ad1a1290341e",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0007.png": {
+    "mtime": 1793598388.409066,
+    "seen": 1793598481.4663005,
+    "ast_hash": "3625f8751b0e569ed6059e8fe2564b4a",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0008.png": {
+    "mtime": 1793598388.413114,
+    "seen": 1793598481.4663014,
+    "ast_hash": "ce14b98b0a6b85bcd8e113c1d1e58337",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0009.png": {
+    "mtime": 1793598388.413114,
+    "seen": 1793598481.4663022,
+    "ast_hash": "53f25aaca4eb1d20575ec0b8eba52237",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0010.png": {
+    "mtime": 1793598388.4179153,
+    "seen": 1793598481.4663033,
+    "ast_hash": "a59e563eb6f1aca18e5c328217888840",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/active/CP Blue0011.png": {
+    "mtime": 1793598388.4179153,
+    "seen": 1793598481.4663048,
+    "ast_hash": "bf35faee159331150973d6d47b42b1a2",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0001.png": {
+    "mtime": 1793598388.4179153,
+    "seen": 1793598481.4663055,
+    "ast_hash": "3a067ac20ef6cd6c5b45128682c4ece4",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0002.png": {
+    "mtime": 1793598388.4205046,
+    "seen": 1793598481.4663062,
+    "ast_hash": "bcce7605a0b9ec48e6d3db40cd78e2d7",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0003.png": {
+    "mtime": 1793598388.4233863,
+    "seen": 1793598481.4663074,
+    "ast_hash": "a4bd98ffe009d40123f186aef798d16d",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0004.png": {
+    "mtime": 1793598388.4238956,
+    "seen": 1793598481.4663084,
+    "ast_hash": "20e570332457c3b56e91b12c96b508f3",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0005.png": {
+    "mtime": 1793598388.4238956,
+    "seen": 1793598481.466309,
+    "ast_hash": "1e267d7feeb0c566aeeffb49c54b27d9",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0006.png": {
+    "mtime": 1793598388.425903,
+    "seen": 1793598481.4663098,
+    "ast_hash": "6243bf1e6aa0400a3dc91f018ff650dd",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0007.png": {
+    "mtime": 1793598388.428104,
+    "seen": 1793598481.466311,
+    "ast_hash": "1644e22c8cb2ff812fd9210b31a41b5d",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0008.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.4663117,
+    "ast_hash": "e8ad83194df0b9e76fbb93677e2f37f7",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0009.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.4663124,
+    "ast_hash": "512c13bc6daf279ab003afd7e879bf02",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0010.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.4663134,
+    "ast_hash": "2992ad5458881cc7ace6cf7f1b57319d",
+    "semantic_hash": ""
+  },
+  "assets/checkpoint/default/CP Orange0011.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.466314,
+    "ast_hash": "faf9258ec58428e31b9cd18817ae9e45",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/House1.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.466315,
+    "ast_hash": "f5e0c81fa9c64ac590f1c0ee1f21cfe5",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/House2.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.4663157,
+    "ast_hash": "2a6b0e6842a10485b46691144757dbb3",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/Shrine.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.4663165,
+    "ast_hash": "54c22214b2a7cb2d99e8a32c59d5ea60",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/house3.png": {
+    "mtime": 1793598388.4291089,
+    "seen": 1793598481.466318,
+    "ast_hash": "b5f1679ec0ba594bf15f814f88fd80bc",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/house4.png": {
+    "mtime": 1793598388.4447773,
+    "seen": 1793598481.4663186,
+    "ast_hash": "27b0098f605ff5841daf5e2313ee6a46",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/house5.png": {
+    "mtime": 1793598388.4447773,
+    "seen": 1793598481.4663196,
+    "ast_hash": "2d94c58cd242e9a3ecadc76f2ad547b3",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/house6.png": {
+    "mtime": 1793598388.4447773,
+    "seen": 1793598481.4663203,
+    "ast_hash": "b11187150427003a9a4ede5f40709f08",
+    "semantic_hash": ""
+  },
+  "assets/houses/Houses/house7.png": {
+    "mtime": 1793598388.4447773,
+    "seen": 1793598481.4663212,
+    "ast_hash": "4ce4fefa03b3e8b29398d738e64e4e01",
+    "semantic_hash": ""
+  },
+  "assets/tileset/5 Creatures/Brown Rabbit.png": {
+    "mtime": 1793598388.4447773,
+    "seen": 1793598481.4663222,
+    "ast_hash": "8673e50c8aaa191f5695297ba83204c0",
+    "semantic_hash": ""
+  },
+  "assets/tileset/5 Creatures/Kobold Spearmen.png": {
+    "mtime": 1793598388.4447773,
+    "seen": 1793598481.466323,
+    "ast_hash": "7cc8a1bdf5822d0db77662331d06c72b",
+    "semantic_hash": ""
+  },
+  "assets/tileset/5 Creatures/Kobold.png": {
+    "mtime": 1793598388.4514573,
+    "seen": 1793598481.4663239,
+    "ast_hash": "d92b8244960c3df3337bd7a49efd9755",
+    "semantic_hash": ""
+  },
+  "assets/tileset/5 Creatures/Shadow Deamon.png": {
+    "mtime": 1793598388.4514573,
+    "seen": 1793598481.4663248,
+    "ast_hash": "f31422b8b4a13fd7a29dc833fb50b583",
+    "semantic_hash": ""
+  },
+  "assets/tileset/5 Creatures/White Rabbit.png": {
+    "mtime": 1793598388.453467,
+    "seen": 1793598481.4663255,
+    "ast_hash": "fb39329d81edb917a3198d398ea411d8",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/@Tileset Guide (Just in Case).png": {
+    "mtime": 1793598388.4539752,
+    "seen": 1793598481.4663265,
+    "ast_hash": "2a55d0efeaabf592188ae9a97b54ce2e",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Animated/Ambience/Animated Grass.png": {
+    "mtime": 1793598388.4559953,
+    "seen": 1793598481.4663277,
+    "ast_hash": "cb1e6544073b60d2a959c2bb84c97bad",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Animated/Ambience/Water Ambience.png": {
+    "mtime": 1793598388.4559953,
+    "seen": 1793598481.4663286,
+    "ast_hash": "9e88e802aed6bd3fb3517d5fab7a5a87",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Animated/Effects/Bush Fx.png": {
+    "mtime": 1793598388.4559953,
+    "seen": 1793598481.4663293,
+    "ast_hash": "727394b1024658c7bb0b9198f7a5b95c",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Animated/Tileset/Water Tileset.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663303,
+    "ast_hash": "f15727a6096e63b428e4dd84a832ffe9",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Cliff.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663315,
+    "ast_hash": "da486fe1a390d07e2981a5e995619951",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Environment.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663322,
+    "ast_hash": "d166a11722ada7f17d07f2b89b634249",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Ground Tileset.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663332,
+    "ast_hash": "135b05e0da2ab9dfead2573900b6ccc3",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Rocks.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663339,
+    "ast_hash": "ca50867c7e79e905d4d4a65481227f19",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Stairs Bridge.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663348,
+    "ast_hash": "2ff8bec7f5cf0605b46007b6eee21306",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Stone Path Tileset.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.466336,
+    "ast_hash": "efbae46015459caf9d51f4f51ae1ed3e",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Tileset.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663367,
+    "ast_hash": "524e204cbae160bef38b11c847e576d7",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Trees.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663374,
+    "ast_hash": "457e95621623e79c966198c4d211d8fa",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Water Flora.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663384,
+    "ast_hash": "e2861199abf08c3cceeb650af3caaedd",
+    "semantic_hash": ""
+  },
+  "assets/tileset/New folder/Water Tileset.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.4663393,
+    "ast_hash": "7c5f18614bf7837a87ee0b6b7e26f3ee",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Tileset16x16/DesertMockup.png": {
+    "mtime": 1793598388.4607916,
+    "seen": 1793598481.46634,
+    "ast_hash": "7c8c64027689d18928afc2d22511a7df",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Tileset16x16/DesertTilemap16x16.png": {
+    "mtime": 1793598388.4706402,
+    "seen": 1793598481.466341,
+    "ast_hash": "acf2d85c51292230bc8da7a531cf5a86",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Tileset16x16/DesertTilemapBlankBackground.png": {
+    "mtime": 1793598388.4706402,
+    "seen": 1793598481.4663422,
+    "ast_hash": "fcced3fc6150d3083ee097e9317960ae",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Tileset16x16/Mockup2.png": {
+    "mtime": 1793598388.4706402,
+    "seen": 1793598481.466344,
+    "ast_hash": "db4e5ace2e10e7a8fc5c92e63eeea8ca",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Tileset16x16/PNG.png": {
+    "mtime": 1793598388.4706402,
+    "seen": 1793598481.4663453,
+    "ast_hash": "870e565c64b57c0de70e2cc1f7fc5ef3",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Woodlands/Woodlands Tileset WIP (v2).png": {
+    "mtime": 1793598388.4706402,
+    "seen": 1793598481.466346,
+    "ast_hash": "3c1d51027a929e0c25f93b90b41cb52d",
+    "semantic_hash": ""
+  },
+  "assets/tileset/Woodlands/preview.png": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.466347,
+    "ast_hash": "210e2ec5df80f501732596ad7ded6105",
+    "semantic_hash": ""
+  },
+  "effects/Death Effect/EnemyDeathEffect.png": {
+    "mtime": 1793598389.3199103,
+    "seen": 1793598481.4663477,
+    "ast_hash": "32aad57535bb6c844d68c7b2da74ecf9",
+    "semantic_hash": ""
+  },
+  "effects/Hit Effect/HitEffect.png": {
+    "mtime": 1793598389.3199103,
+    "seen": 1793598481.466349,
+    "ast_hash": "7f0d5f31946f4c83b1a1f59a6adb3e06",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0001.png": {
+    "mtime": 1793598389.3258364,
+    "seen": 1793598481.4663494,
+    "ast_hash": "132af0d7a4f5f6d105054333886b3a90",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0002.png": {
+    "mtime": 1793598389.3258364,
+    "seen": 1793598481.46635,
+    "ast_hash": "859069f64188584181eb86e8b442fb45",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0003.png": {
+    "mtime": 1793598389.335039,
+    "seen": 1793598481.466351,
+    "ast_hash": "69bd98da608c73b667c64f1862e48ec9",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0004.png": {
+    "mtime": 1793598389.3360622,
+    "seen": 1793598481.4663522,
+    "ast_hash": "ba804087113d7cb9b3899bb571e2bbda",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0005.png": {
+    "mtime": 1793598389.3380716,
+    "seen": 1793598481.4663527,
+    "ast_hash": "5b74f1fe790c4ce48b8daacfa7b52ea4",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0006.png": {
+    "mtime": 1793598389.3380716,
+    "seen": 1793598481.4663534,
+    "ast_hash": "d09406b8ae1b42bb2967358b82b0712b",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0007.png": {
+    "mtime": 1793598389.3380716,
+    "seen": 1793598481.4663544,
+    "ast_hash": "7e918d74264869d77d4ceadf1ec329fa",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0008.png": {
+    "mtime": 1793598389.3380716,
+    "seen": 1793598481.466355,
+    "ast_hash": "9d4091759d6ae75d00b871646da34615",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0009.png": {
+    "mtime": 1793598389.3456242,
+    "seen": 1793598481.466356,
+    "ast_hash": "64a2749d58a00faa950df1e226ad3487",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/defeat/Devilling King Death0010.png": {
+    "mtime": 1793598389.3502483,
+    "seen": 1793598481.4663568,
+    "ast_hash": "44e3547f2df3e542bae1bf9e5e2e9ffa",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/idle/Devilling King Idle0001.png": {
+    "mtime": 1793598389.3531106,
+    "seen": 1793598481.4663575,
+    "ast_hash": "e3477e8041f014d5ebf593b3b7c5d5a4",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/idle/Devilling King Idle0002.png": {
+    "mtime": 1793598389.3531106,
+    "seen": 1793598481.4663582,
+    "ast_hash": "c803ce0698fb808c44848a0099267e3d",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/idle/Devilling King Idle0003.png": {
+    "mtime": 1793598389.3531106,
+    "seen": 1793598481.4663591,
+    "ast_hash": "e366b04ebb7c37d2d772defeb3a9512c",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/idle/Devilling King Idle0004.png": {
+    "mtime": 1793598389.3531106,
+    "seen": 1793598481.4663599,
+    "ast_hash": "c8274c2b1c0012ff2ee3fc092c9d8161",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/idle/Devilling King Idle0005.png": {
+    "mtime": 1793598389.3662398,
+    "seen": 1793598481.4663606,
+    "ast_hash": "e5d783779f45e2f8e48a7f17f4b2da55",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10001.png": {
+    "mtime": 1793598389.3662398,
+    "seen": 1793598481.4663615,
+    "ast_hash": "5f57456a7ea9a378e9ca5481f5db1f22",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10002.png": {
+    "mtime": 1793598389.3662398,
+    "seen": 1793598481.4663625,
+    "ast_hash": "8293a74ee87b3343567ebe2fcb1bf93d",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10003.png": {
+    "mtime": 1793598389.3662398,
+    "seen": 1793598481.466363,
+    "ast_hash": "9d0686b2edcd1741c699c92df38814fa",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10004.png": {
+    "mtime": 1793598389.3662398,
+    "seen": 1793598481.466364,
+    "ast_hash": "9c7e7c0d4eacb3448e7f9b16a824dc84",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10005.png": {
+    "mtime": 1793598389.3787773,
+    "seen": 1793598481.4663646,
+    "ast_hash": "f5ab825e9b1d02ddd93472e867cd6a8d",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10006.png": {
+    "mtime": 1793598389.381477,
+    "seen": 1793598481.4663653,
+    "ast_hash": "551f23ee973b5a3da4b20ed3d1004c36",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10007.png": {
+    "mtime": 1793598389.3834846,
+    "seen": 1793598481.4663663,
+    "ast_hash": "25746992935b98f864de01b21a7b0610",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10008.png": {
+    "mtime": 1793598389.3834846,
+    "seen": 1793598481.466367,
+    "ast_hash": "69078d570b2034c618aa718c9e21b69f",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10009.png": {
+    "mtime": 1793598389.386404,
+    "seen": 1793598481.466368,
+    "ast_hash": "43c306d462dd6837ecdbcc353354c93c",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10010.png": {
+    "mtime": 1793598389.386404,
+    "seen": 1793598481.4663687,
+    "ast_hash": "2959692e2ae37935c7f2a64bf190912b",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10011.png": {
+    "mtime": 1793598389.3950827,
+    "seen": 1793598481.4663696,
+    "ast_hash": "6c6e2b61a1c5e93a5768ab016627f7fe",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10012.png": {
+    "mtime": 1793598389.3976107,
+    "seen": 1793598481.4663706,
+    "ast_hash": "2950418d9a1ed1af9488a9841e051a4e",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10013.png": {
+    "mtime": 1793598389.3976107,
+    "seen": 1793598481.4663713,
+    "ast_hash": "ea3e3efefc269183129ff3ff9caf6b77",
+    "semantic_hash": ""
+  },
+  "mobs/king deviling/run/Devilling King AttkSq10014.png": {
+    "mtime": 1793598389.401052,
+    "seen": 1793598481.466372,
+    "ast_hash": "169486ef447ef235871ffd0606d085ea",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Attack/Marauder Attk0001.png": {
+    "mtime": 1793598389.4030573,
+    "seen": 1793598481.4663732,
+    "ast_hash": "c6e95016b43feab5b7bcc650995fc5bd",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Attack/Marauder Attk0002.png": {
+    "mtime": 1793598389.4050627,
+    "seen": 1793598481.4663742,
+    "ast_hash": "8bc8820655e4a2240c09cacf210563d4",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Attack/Marauder Attk0003.png": {
+    "mtime": 1793598389.4050627,
+    "seen": 1793598481.4663749,
+    "ast_hash": "f49026f3f7597bb4cc477e4e3ead0327",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Attack/Marauder Attk0004.png": {
+    "mtime": 1793598389.4050627,
+    "seen": 1793598481.4663756,
+    "ast_hash": "0087301035bfa5d37d01a415c5f9dc85",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Attack/Marauder Attk0005.png": {
+    "mtime": 1793598389.4050627,
+    "seen": 1793598481.4663765,
+    "ast_hash": "835207818611a0747cd1c67efda71631",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0001.png": {
+    "mtime": 1793598389.4050627,
+    "seen": 1793598481.4663775,
+    "ast_hash": "c3ec81a7d6403a69909016423e9ffa44",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0002.png": {
+    "mtime": 1793598389.413276,
+    "seen": 1793598481.4663782,
+    "ast_hash": "c3ec81a7d6403a69909016423e9ffa44",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0003.png": {
+    "mtime": 1793598389.413276,
+    "seen": 1793598481.466379,
+    "ast_hash": "c3ec81a7d6403a69909016423e9ffa44",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0004.png": {
+    "mtime": 1793598389.4167695,
+    "seen": 1793598481.4663801,
+    "ast_hash": "55797bad423319abaa5b9cbe38712795",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0005.png": {
+    "mtime": 1793598389.4197764,
+    "seen": 1793598481.4663808,
+    "ast_hash": "55797bad423319abaa5b9cbe38712795",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0006.png": {
+    "mtime": 1793598389.4197764,
+    "seen": 1793598481.4663815,
+    "ast_hash": "55797bad423319abaa5b9cbe38712795",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0007.png": {
+    "mtime": 1793598389.4226987,
+    "seen": 1793598481.4663825,
+    "ast_hash": "f7d89437b61d955f5f651370ba243c2e",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0008.png": {
+    "mtime": 1793598389.4267516,
+    "seen": 1793598481.4663835,
+    "ast_hash": "f7d89437b61d955f5f651370ba243c2e",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0009.png": {
+    "mtime": 1793598389.4292655,
+    "seen": 1793598481.4663844,
+    "ast_hash": "f7d89437b61d955f5f651370ba243c2e",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0010.png": {
+    "mtime": 1793598389.4292655,
+    "seen": 1793598481.4663851,
+    "ast_hash": "55797bad423319abaa5b9cbe38712795",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0011.png": {
+    "mtime": 1793598389.4292655,
+    "seen": 1793598481.4663858,
+    "ast_hash": "55797bad423319abaa5b9cbe38712795",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Idle/Devilling Marauder Idle0012.png": {
+    "mtime": 1793598389.4292655,
+    "seen": 1793598481.4663868,
+    "ast_hash": "55797bad423319abaa5b9cbe38712795",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0001.png": {
+    "mtime": 1793598389.4292655,
+    "seen": 1793598481.4663877,
+    "ast_hash": "c3ec81a7d6403a69909016423e9ffa44",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0002.png": {
+    "mtime": 1793598389.4605896,
+    "seen": 1793598481.4663885,
+    "ast_hash": "823dc66d95dfe095c46c35e84b8c2b2b",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0003.png": {
+    "mtime": 1793598389.476318,
+    "seen": 1793598481.4663892,
+    "ast_hash": "03505fcf3c80aedbd396614f049a8c77",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0004.png": {
+    "mtime": 1793598389.476318,
+    "seen": 1793598481.4663901,
+    "ast_hash": "d471ca94608bd4fbb075411e5b5c5b27",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0005.png": {
+    "mtime": 1793598389.476318,
+    "seen": 1793598481.4663908,
+    "ast_hash": "afe9e4f3c23b04420b34f64849a1a815",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0006.png": {
+    "mtime": 1793598389.4832299,
+    "seen": 1793598481.4663918,
+    "ast_hash": "e5f88c379970ba6814c693e80ef26136",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/Marauder Run/Devilling Marauder move0007.png": {
+    "mtime": 1793598389.4862857,
+    "seen": 1793598481.4663925,
+    "ast_hash": "a3f66ba7a49c4afbc652e3b223003423",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0001.png": {
+    "mtime": 1793598389.4873033,
+    "seen": 1793598481.4663932,
+    "ast_hash": "e9dcb9cae64b43ccc88e92b8c6c64189",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0002.png": {
+    "mtime": 1793598389.4921606,
+    "seen": 1793598481.4663942,
+    "ast_hash": "9cd13f732e356a4b55d74e511ca8cfa7",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0003.png": {
+    "mtime": 1793598389.4921606,
+    "seen": 1793598481.466395,
+    "ast_hash": "32a0a75c7bf72763118926320efa3ac3",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0004.png": {
+    "mtime": 1793598389.4921606,
+    "seen": 1793598481.4663959,
+    "ast_hash": "1bd96cc2a940fe1e343800828f04bcb8",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0005.png": {
+    "mtime": 1793598389.4921606,
+    "seen": 1793598481.4663966,
+    "ast_hash": "11acfdffa5dbb766fe792aed42ac74b9",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0006.png": {
+    "mtime": 1793598389.4921606,
+    "seen": 1793598481.4663975,
+    "ast_hash": "825667cadef896e0948b219eb561bf38",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0007.png": {
+    "mtime": 1793598389.4921606,
+    "seen": 1793598481.4663982,
+    "ast_hash": "6b7b76900e09839396346662293eebb1",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0008.png": {
+    "mtime": 1793598389.502436,
+    "seen": 1793598481.4663992,
+    "ast_hash": "724497e0dca450794b156b5dbf6140ca",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0009.png": {
+    "mtime": 1793598389.502436,
+    "seen": 1793598481.4664,
+    "ast_hash": "505ae793dd2b08ada0a7d55d30640672",
+    "semantic_hash": ""
+  },
+  "mobs/marauder/defeat/Marauder Death0010.png": {
+    "mtime": 1793598389.502436,
+    "seen": 1793598481.466401,
+    "ast_hash": "160833147c77bdf60fda0c56c32b2aa0",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0001.png": {
+    "mtime": 1793598389.502436,
+    "seen": 1793598481.4664018,
+    "ast_hash": "01e16630e9667b77b623ffdb6cf198b0",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0002.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.4664025,
+    "ast_hash": "e2eb55c65d0cac7dce3d946b6a536fd6",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0003.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.4664032,
+    "ast_hash": "4b0a5968424f8397e9570a3ddb18baf8",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0004.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.4664042,
+    "ast_hash": "a1ae47ba86a9b0f5a4444308b36a2a4b",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0005.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.466405,
+    "ast_hash": "8abc4b221a4defa19b2f6da10ad79a54",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0006.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.4664056,
+    "ast_hash": "f0ad10aa593f060bc5dcff2f60764721",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0007.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.4664063,
+    "ast_hash": "e84310225219de08623bdbe9361ebdf7",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0008.png": {
+    "mtime": 1793598389.50804,
+    "seen": 1793598481.4664075,
+    "ast_hash": "6f489df8d8c98387b956d5a0676341b6",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/defeat/Puporing death0009.png": {
+    "mtime": 1793598389.5160618,
+    "seen": 1793598481.4664083,
+    "ast_hash": "3c8abccad57d45757650b315fb9734ff",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0001.png": {
+    "mtime": 1793598389.5176125,
+    "seen": 1793598481.4664092,
+    "ast_hash": "5346defcf9b629c95f026e9f7514ce40",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0002.png": {
+    "mtime": 1793598389.5176125,
+    "seen": 1793598481.4664102,
+    "ast_hash": "5346defcf9b629c95f026e9f7514ce40",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0003.png": {
+    "mtime": 1793598389.5176125,
+    "seen": 1793598481.466411,
+    "ast_hash": "814e6d16419cbed77aca00b25749a08d",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0004.png": {
+    "mtime": 1793598389.5196216,
+    "seen": 1793598481.4664118,
+    "ast_hash": "814e6d16419cbed77aca00b25749a08d",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0005.png": {
+    "mtime": 1793598389.5196216,
+    "seen": 1793598481.4664128,
+    "ast_hash": "616d2f6388f46e0d62e52fe0effdf21d",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0006.png": {
+    "mtime": 1793598389.5196216,
+    "seen": 1793598481.4664135,
+    "ast_hash": "616d2f6388f46e0d62e52fe0effdf21d",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0007.png": {
+    "mtime": 1793598389.5196216,
+    "seen": 1793598481.4664145,
+    "ast_hash": "814e6d16419cbed77aca00b25749a08d",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/idle/Puporing Idle0008.png": {
+    "mtime": 1793598389.5196216,
+    "seen": 1793598481.4664166,
+    "ast_hash": "814e6d16419cbed77aca00b25749a08d",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0001.png": {
+    "mtime": 1793598389.5236833,
+    "seen": 1793598481.4664173,
+    "ast_hash": "5346defcf9b629c95f026e9f7514ce40",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0002.png": {
+    "mtime": 1793598389.5236833,
+    "seen": 1793598481.4664185,
+    "ast_hash": "7b4b7b111810e1e7e7a8316aa13b63f4",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0003.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664192,
+    "ast_hash": "7da22d2ba588f7b75b64944e7103b6a5",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0004.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664202,
+    "ast_hash": "a9a0f976755cdb8a456f321241c09c72",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0005.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.466421,
+    "ast_hash": "c8f0147c0c9d3824361d2d79275911a4",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0006.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664218,
+    "ast_hash": "0022832792922dc5e2af4c77d5a6b169",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0007.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664226,
+    "ast_hash": "e8fa4a4ac29dcea62f86befc9343dc63",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0008.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664233,
+    "ast_hash": "d9e15989c1274f1faaa1344879434acf",
+    "semantic_hash": ""
+  },
+  "mobs/mini poring/move/Puporing move0009.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664242,
+    "ast_hash": "702faf9525490ebdd504eda515e75686",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0001.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664252,
+    "ast_hash": "d86c228a10f2023f8d1f314cbab7a9c1",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0002.png": {
+    "mtime": 1793598389.5265558,
+    "seen": 1793598481.4664261,
+    "ast_hash": "349f2c3dbb2df6d87ec8b03f377a63b1",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0003.png": {
+    "mtime": 1793598389.5373046,
+    "seen": 1793598481.466427,
+    "ast_hash": "b90bad2d2f213957c62f7191a4f4cb5d",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0004.png": {
+    "mtime": 1793598389.5373046,
+    "seen": 1793598481.4664278,
+    "ast_hash": "eca7fbc05caebc17796915a1c8c914fb",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0005.png": {
+    "mtime": 1793598389.5395615,
+    "seen": 1793598481.466429,
+    "ast_hash": "95db61668d5baee1e0234d5271478ed9",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0006.png": {
+    "mtime": 1793598389.5395615,
+    "seen": 1793598481.4664295,
+    "ast_hash": "e657f34d84159d2158ef038b1d2cd2d0",
+    "semantic_hash": ""
+  },
+  "npc/idle/NPC0007.png": {
+    "mtime": 1793598389.5426989,
+    "seen": 1793598481.4664304,
+    "ast_hash": "d86c228a10f2023f8d1f314cbab7a9c1",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0001.png": {
+    "mtime": 1793598389.5426989,
+    "seen": 1793598481.4664314,
+    "ast_hash": "ee578a578dafffe42c89b18c3e282532",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0002.png": {
+    "mtime": 1793598389.5426989,
+    "seen": 1793598481.4664323,
+    "ast_hash": "aa3819ed1db66fe61148ac44e894c8b2",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0003.png": {
+    "mtime": 1793598389.5474987,
+    "seen": 1793598481.466433,
+    "ast_hash": "1772beb50da8afca0b0c2995231494ac",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0004.png": {
+    "mtime": 1793598389.5480065,
+    "seen": 1793598481.4664338,
+    "ast_hash": "678a947b52c714c35a78b39464805f7e",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0005.png": {
+    "mtime": 1793598389.5480065,
+    "seen": 1793598481.4664347,
+    "ast_hash": "5c69ea3531c316e1eb535b2842376f0b",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0006.png": {
+    "mtime": 1793598389.550015,
+    "seen": 1793598481.4664357,
+    "ast_hash": "a2f19e2dd566dcea70a9e6194ef552c2",
+    "semantic_hash": ""
+  },
+  "npc/monk/NPC MonkR0007.png": {
+    "mtime": 1793598389.550015,
+    "seen": 1793598481.4664364,
+    "ast_hash": "ee578a578dafffe42c89b18c3e282532",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0001.png": {
+    "mtime": 1793598389.5554287,
+    "seen": 1793598481.466437,
+    "ast_hash": "1eaa0747674e36d398eb6585f2555405",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0002.png": {
+    "mtime": 1793598389.5554287,
+    "seen": 1793598481.4664378,
+    "ast_hash": "163df220e62845683ca4301e722ed094",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0003.png": {
+    "mtime": 1793598389.5554287,
+    "seen": 1793598481.4664388,
+    "ast_hash": "7ea513899be09ed8fc21a1710dc31171",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0004.png": {
+    "mtime": 1793598389.5554287,
+    "seen": 1793598481.4664395,
+    "ast_hash": "604c0e01bf84e68cb12eccb25009dad8",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0005.png": {
+    "mtime": 1793598389.5631537,
+    "seen": 1793598481.4664404,
+    "ast_hash": "cbed6b223c387c1db42634646a35a41f",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0006.png": {
+    "mtime": 1793598389.5631537,
+    "seen": 1793598481.4664414,
+    "ast_hash": "383b5e83e31c33a976805220ddc8680a",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0007.png": {
+    "mtime": 1793598389.5631537,
+    "seen": 1793598481.4664423,
+    "ast_hash": "23958e96fc5599360f59b640a6a9453b",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0008.png": {
+    "mtime": 1793598389.5631537,
+    "seen": 1793598481.466443,
+    "ast_hash": "263ae09b309c9ac6c345b739198ff44b",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0009.png": {
+    "mtime": 1793598389.568838,
+    "seen": 1793598481.4664438,
+    "ast_hash": "2e125efb1d476ecd3eaf339681a134ae",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0010.png": {
+    "mtime": 1793598389.5713153,
+    "seen": 1793598481.4664445,
+    "ast_hash": "77d4dce6026a87f59785c35b25251361",
+    "semantic_hash": ""
+  },
+  "player/Defeat/MC Death0011.png": {
+    "mtime": 1793598389.5713153,
+    "seen": 1793598481.4664452,
+    "ast_hash": "54050f2e9586ca82d836f957b2f3d9a5",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/MC Attk Front0001.png": {
+    "mtime": 1793598389.5713153,
+    "seen": 1793598481.4664462,
+    "ast_hash": "fa85c41fad936a04bfece7079bfbe945",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/MC Attk Front0002.png": {
+    "mtime": 1793598389.576944,
+    "seen": 1793598481.4664469,
+    "ast_hash": "c6093308fd86544856982769ff82061f",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/MC Attk Front0003.png": {
+    "mtime": 1793598389.5784638,
+    "seen": 1793598481.4664476,
+    "ast_hash": "d1dc5bece9eddd73a7afd8dd68ddc565",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/MC Attk Front0004.png": {
+    "mtime": 1793598389.5784638,
+    "seen": 1793598481.4664483,
+    "ast_hash": "d575c879adf1c2ebf83c6572b2026167",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/MC Attk Front0005.png": {
+    "mtime": 1793598389.5815234,
+    "seen": 1793598481.4664495,
+    "ast_hash": "df5b05f173dfc166b92e7098f2bd84f6",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/MC Attk Front0006.png": {
+    "mtime": 1793598389.5835285,
+    "seen": 1793598481.4664502,
+    "ast_hash": "af9c18f27189d8a6f1f63fcd3d10ee54",
+    "semantic_hash": ""
+  },
+  "player/Down Attk/McAtkRight0007.png": {
+    "mtime": 1793598389.5835285,
+    "seen": 1793598481.4664507,
+    "ast_hash": "58a3fb834c69893a4f658da19e22f337",
+    "semantic_hash": ""
+  },
+  "player/Down Dash/Mc front dash0001.png": {
+    "mtime": 1793598389.5859466,
+    "seen": 1793598481.4664516,
+    "ast_hash": "4982c0313c0e238148bf04c156634e68",
+    "semantic_hash": ""
+  },
+  "player/Down Dash/Mc front dash0002.png": {
+    "mtime": 1793598389.5869515,
+    "seen": 1793598481.4664526,
+    "ast_hash": "4d39e3436b74a2bb501f3614a4a0349c",
+    "semantic_hash": ""
+  },
+  "player/Down Dash/Mc front dash0003.png": {
+    "mtime": 1793598389.5869515,
+    "seen": 1793598481.4664533,
+    "ast_hash": "b7377fe9bd80752c0d2f277d92e59ef0",
+    "semantic_hash": ""
+  },
+  "player/Down Dash/Mc front dash0004.png": {
+    "mtime": 1793598389.5926123,
+    "seen": 1793598481.466454,
+    "ast_hash": "0939b22e2b5c8d65f123d98322ab5836",
+    "semantic_hash": ""
+  },
+  "player/Down Dash/Mc front dash0005.png": {
+    "mtime": 1793598389.5926123,
+    "seen": 1793598481.4664547,
+    "ast_hash": "c1e7f916fb9b903ccba06b2f155d0f46",
+    "semantic_hash": ""
+  },
+  "player/Down Dash/Mc front dash0006.png": {
+    "mtime": 1793598389.5956304,
+    "seen": 1793598481.4664555,
+    "ast_hash": "c1e7f916fb9b903ccba06b2f155d0f46",
+    "semantic_hash": ""
+  },
+  "player/Down Idle/MC Front idle0001.png": {
+    "mtime": 1793598389.5956304,
+    "seen": 1793598481.4664567,
+    "ast_hash": "32ed239d2d55081f26735defe783a075",
+    "semantic_hash": ""
+  },
+  "player/Down Idle/MC Front idle0002.png": {
+    "mtime": 1793598389.5956304,
+    "seen": 1793598481.4664574,
+    "ast_hash": "f9d2e50a7a68c601131d4508463edc72",
+    "semantic_hash": ""
+  },
+  "player/Down Idle/MC Front idle0003.png": {
+    "mtime": 1793598389.602906,
+    "seen": 1793598481.466458,
+    "ast_hash": "9a75f770ad97a44de20173a6e5f646d1",
+    "semantic_hash": ""
+  },
+  "player/Down Idle/MC Front idle0004.png": {
+    "mtime": 1793598389.602906,
+    "seen": 1793598481.4664588,
+    "ast_hash": "f9d2e50a7a68c601131d4508463edc72",
+    "semantic_hash": ""
+  },
+  "player/Down Run/FrontRunMC0001.png": {
+    "mtime": 1793598389.602906,
+    "seen": 1793598481.4664598,
+    "ast_hash": "3c7b3ccd8018ac00ee17827bddb6ca2a",
+    "semantic_hash": ""
+  },
+  "player/Down Run/FrontRunMC0002.png": {
+    "mtime": 1793598389.608876,
+    "seen": 1793598481.4664605,
+    "ast_hash": "34d0c79fb0153b72c991dd88869ec8c1",
+    "semantic_hash": ""
+  },
+  "player/Down Run/FrontRunMC0003.png": {
+    "mtime": 1793598389.608876,
+    "seen": 1793598481.4664612,
+    "ast_hash": "6130917706a74590b52b1f565c4aa2d3",
+    "semantic_hash": ""
+  },
+  "player/Down Run/FrontRunMC0004.png": {
+    "mtime": 1793598389.608876,
+    "seen": 1793598481.466462,
+    "ast_hash": "777eee42b30cfbcad4eba7681506e0c1",
+    "semantic_hash": ""
+  },
+  "player/Down Run/FrontRunMC0005.png": {
+    "mtime": 1793598389.6128695,
+    "seen": 1793598481.4664626,
+    "ast_hash": "832dd3f922f297972151f19ee386d7b6",
+    "semantic_hash": ""
+  },
+  "player/Down Run/FrontRunMC0006.png": {
+    "mtime": 1793598389.6128695,
+    "seen": 1793598481.4664636,
+    "ast_hash": "e98cd3fc6c41745fc55c1c9d2f1331f8",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0001.png": {
+    "mtime": 1793598389.6170259,
+    "seen": 1793598481.4664645,
+    "ast_hash": "a9b9753aae88993fef05ddd1e716181e",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0002.png": {
+    "mtime": 1793598389.6190355,
+    "seen": 1793598481.4664652,
+    "ast_hash": "a9b9753aae88993fef05ddd1e716181e",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0003.png": {
+    "mtime": 1793598389.6190355,
+    "seen": 1793598481.466466,
+    "ast_hash": "837677c2fe958bf91e53fba5926d3d33",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0004.png": {
+    "mtime": 1793598389.6190355,
+    "seen": 1793598481.466467,
+    "ast_hash": "837677c2fe958bf91e53fba5926d3d33",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0005.png": {
+    "mtime": 1793598389.6239362,
+    "seen": 1793598481.4664679,
+    "ast_hash": "a290c018c4e279bdb18dc089231b9ce3",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0006.png": {
+    "mtime": 1793598389.6239362,
+    "seen": 1793598481.4664686,
+    "ast_hash": "62756d642c7eaf26e41d119c20cab2c0",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0007.png": {
+    "mtime": 1793598389.6271112,
+    "seen": 1793598481.4664695,
+    "ast_hash": "4a6a2d080f35f038b69ab1326f133bb0",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/McAtkRight0008.png": {
+    "mtime": 1793598389.6271112,
+    "seen": 1793598481.4664705,
+    "ast_hash": "cf7f132dc7288b487efde27991675519",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0001.png": {
+    "mtime": 1793598389.6301856,
+    "seen": 1793598481.4664714,
+    "ast_hash": "5c1a2a11f6f1f636c40a6b83c74a42f4",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0002.png": {
+    "mtime": 1793598389.6323142,
+    "seen": 1793598481.4664721,
+    "ast_hash": "5c1a2a11f6f1f636c40a6b83c74a42f4",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0003.png": {
+    "mtime": 1793598389.6347656,
+    "seen": 1793598481.466473,
+    "ast_hash": "bac3f6ba08652b02c8c6580832c97776",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0004.png": {
+    "mtime": 1793598389.6347656,
+    "seen": 1793598481.466474,
+    "ast_hash": "bac3f6ba08652b02c8c6580832c97776",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0005.png": {
+    "mtime": 1793598389.6384094,
+    "seen": 1793598481.4664745,
+    "ast_hash": "ae1ccef010e7ffcda250d4103a50493a",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0006.png": {
+    "mtime": 1793598389.6389174,
+    "seen": 1793598481.4664755,
+    "ast_hash": "06a342bd3dc09f7349b70811388f5345",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0007.png": {
+    "mtime": 1793598389.6389174,
+    "seen": 1793598481.4664762,
+    "ast_hash": "96cd1aae5ea5f3b72094d82aff4891f7",
+    "semantic_hash": ""
+  },
+  "player/Side Attk/left/McAtkRight0008.png": {
+    "mtime": 1793598389.6389174,
+    "seen": 1793598481.4664774,
+    "ast_hash": "c74cfe87caf2bbd24df1d9d8c559acab",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/MC side dash0001.png": {
+    "mtime": 1793598389.6389174,
+    "seen": 1793598481.466478,
+    "ast_hash": "9e1b75dff9f59c0d7c5023cc538a5266",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/MC side dash0002.png": {
+    "mtime": 1793598389.6452894,
+    "seen": 1793598481.466479,
+    "ast_hash": "e7326aebc3e9696c8c0e0ab80799ff28",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/MC side dash0003.png": {
+    "mtime": 1793598389.6452894,
+    "seen": 1793598481.4664798,
+    "ast_hash": "fa660f309dc4feb1b49625b724bb3c80",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/MC side dash0004.png": {
+    "mtime": 1793598389.650299,
+    "seen": 1793598481.4664807,
+    "ast_hash": "8f1d2c1b3efd786cb65c5dc900fb0f2b",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/MC side dash0005.png": {
+    "mtime": 1793598389.6523242,
+    "seen": 1793598481.4664814,
+    "ast_hash": "eaf0299f7dcba4a754eb6f8787b6af37",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/left/MC side dash0001.png": {
+    "mtime": 1793598389.6523242,
+    "seen": 1793598481.4664822,
+    "ast_hash": "08c955a14796a2ac3a3497a974fe1cc1",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/left/MC side dash0002.png": {
+    "mtime": 1793598389.6566994,
+    "seen": 1793598481.466483,
+    "ast_hash": "6331d6c4b0e8f6c6730776c0aaefe85c",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/left/MC side dash0003.png": {
+    "mtime": 1793598389.6566994,
+    "seen": 1793598481.4664843,
+    "ast_hash": "ea891e2fd999a20a01b9895789ed3c53",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/left/MC side dash0004.png": {
+    "mtime": 1793598389.6616807,
+    "seen": 1793598481.466485,
+    "ast_hash": "372e57270cd01a19b7aac4282d7833f9",
+    "semantic_hash": ""
+  },
+  "player/Side Dash/left/MC side dash0005.png": {
+    "mtime": 1793598389.6651673,
+    "seen": 1793598481.4664857,
+    "ast_hash": "f72d68ab9bf5896e90dbc2401ba01663",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/idle1.png": {
+    "mtime": 1793598389.6661723,
+    "seen": 1793598481.4664865,
+    "ast_hash": "974b8403eb7ff47a2c82440404c50d08",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/idle2.png": {
+    "mtime": 1793598389.668686,
+    "seen": 1793598481.4664876,
+    "ast_hash": "c7d69b96a60b13d6a75110d74e2b1534",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/idle3.png": {
+    "mtime": 1793598389.669194,
+    "seen": 1793598481.4664884,
+    "ast_hash": "18d282af88a6cbbb5c52cc0cdc7dfd30",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/idle4.png": {
+    "mtime": 1793598389.669194,
+    "seen": 1793598481.466489,
+    "ast_hash": "b0b4dc79e0ab8709a10b3eaa61f5ffe3",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/left/LeftIdle (1).png": {
+    "mtime": 1793598389.669194,
+    "seen": 1793598481.46649,
+    "ast_hash": "a5f9d8ca913279aea612a8ebe300d79a",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/left/LeftIdle (2).png": {
+    "mtime": 1793598389.674653,
+    "seen": 1793598481.466491,
+    "ast_hash": "7099c56ab831051df37dc4218e54b0a5",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/left/LeftIdle (3).png": {
+    "mtime": 1793598389.674653,
+    "seen": 1793598481.4664917,
+    "ast_hash": "7f21ed2a4223a186f46d6653362325d2",
+    "semantic_hash": ""
+  },
+  "player/Side Idle/left/LeftIdle (4).png": {
+    "mtime": 1793598389.6776435,
+    "seen": 1793598481.4664924,
+    "ast_hash": "481dc62f4084872bc44e911f2d8a9aa0",
+    "semantic_hash": ""
+  },
+  "player/Side Run/Left/l1.png": {
+    "mtime": 1793598389.6776435,
+    "seen": 1793598481.4664934,
+    "ast_hash": "49be2836aebbf557ca73e207f7230142",
+    "semantic_hash": ""
+  },
+  "player/Side Run/Left/l2.png": {
+    "mtime": 1793598389.682011,
+    "seen": 1793598481.4664946,
+    "ast_hash": "6fde3fa653a8cca9d86f47b0844aa9bd",
+    "semantic_hash": ""
+  },
+  "player/Side Run/Left/l3.png": {
+    "mtime": 1793598389.6835165,
+    "seen": 1793598481.4664953,
+    "ast_hash": "d40f9f596583dc25b34a80440a7c25d4",
+    "semantic_hash": ""
+  },
+  "player/Side Run/Left/l4.png": {
+    "mtime": 1793598389.685529,
+    "seen": 1793598481.466496,
+    "ast_hash": "dd7769dacf35afe7112492f751f766ca",
+    "semantic_hash": ""
+  },
+  "player/Side Run/Left/l5.png": {
+    "mtime": 1793598389.6875377,
+    "seen": 1793598481.466497,
+    "ast_hash": "2a5b4714dd0fe33814f85e201b462fcd",
+    "semantic_hash": ""
+  },
+  "player/Side Run/Left/l6.png": {
+    "mtime": 1793598389.6875377,
+    "seen": 1793598481.466498,
+    "ast_hash": "db8980e5b9f8d128eda455fe1317727d",
+    "semantic_hash": ""
+  },
+  "player/Side Run/run1.png": {
+    "mtime": 1793598389.6896217,
+    "seen": 1793598481.4664989,
+    "ast_hash": "7e5c59ecc822db8f71243aa2d578bf4e",
+    "semantic_hash": ""
+  },
+  "player/Side Run/run2.png": {
+    "mtime": 1793598389.6896217,
+    "seen": 1793598481.4664996,
+    "ast_hash": "a538a7cfdd041e60513c380985eba381",
+    "semantic_hash": ""
+  },
+  "player/Side Run/run3.png": {
+    "mtime": 1793598389.6896217,
+    "seen": 1793598481.4665003,
+    "ast_hash": "0e8ff679286fd483e8cdfb7176655f58",
+    "semantic_hash": ""
+  },
+  "player/Side Run/run4.png": {
+    "mtime": 1793598389.6896217,
+    "seen": 1793598481.4665012,
+    "ast_hash": "e1b48c536d92501315abccdb4de2322c",
+    "semantic_hash": ""
+  },
+  "player/Side Run/run5.png": {
+    "mtime": 1793598389.6896217,
+    "seen": 1793598481.466502,
+    "ast_hash": "eb4d33ac7d43ced59b3e6842cf583e68",
+    "semantic_hash": ""
+  },
+  "player/Side Run/run6.png": {
+    "mtime": 1793598389.699415,
+    "seen": 1793598481.466503,
+    "ast_hash": "fc8470ff912fe6a90ad4e703cc38dc8b",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0001.png": {
+    "mtime": 1793598389.699415,
+    "seen": 1793598481.4665036,
+    "ast_hash": "ab1be3a3dffae62e9905ad1095b4f95e",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0002.png": {
+    "mtime": 1793598389.699415,
+    "seen": 1793598481.4665048,
+    "ast_hash": "75ec2dd67ee24f083cf855f43f3b090b",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0003.png": {
+    "mtime": 1793598389.699415,
+    "seen": 1793598481.4665055,
+    "ast_hash": "f034a1d5729e6de7056de4e8fd845c34",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0004.png": {
+    "mtime": 1793598389.699415,
+    "seen": 1793598481.4665062,
+    "ast_hash": "a11b9508de57ea18b9db3486bd062ac2",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0005.png": {
+    "mtime": 1793598389.699415,
+    "seen": 1793598481.466507,
+    "ast_hash": "3858ce9192050d2ed7569f08c2af6592",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0006.png": {
+    "mtime": 1793598389.708871,
+    "seen": 1793598481.4665077,
+    "ast_hash": "9988587d9c701193f2a3bd0dcf288d16",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0007.png": {
+    "mtime": 1793598389.708871,
+    "seen": 1793598481.4665089,
+    "ast_hash": "cd8c763f6667cc547c08a3ebea65c470",
+    "semantic_hash": ""
+  },
+  "player/Up Attack/Mc back attk0008.png": {
+    "mtime": 1793598389.7115915,
+    "seen": 1793598481.4665096,
+    "ast_hash": "4ef6080e24cc48f33dc406df092d5f57",
+    "semantic_hash": ""
+  },
+  "player/Up Dash/Mc back dash0001.png": {
+    "mtime": 1793598389.7115915,
+    "seen": 1793598481.4665103,
+    "ast_hash": "546ec0497b1e466532907320f71c5060",
+    "semantic_hash": ""
+  },
+  "player/Up Dash/Mc back dash0002.png": {
+    "mtime": 1793598389.7135963,
+    "seen": 1793598481.466511,
+    "ast_hash": "23d991ec37afe07bc6350035b6910ecd",
+    "semantic_hash": ""
+  },
+  "player/Up Dash/Mc back dash0003.png": {
+    "mtime": 1793598389.7165956,
+    "seen": 1793598481.4665122,
+    "ast_hash": "f74f06de6ba3b4647f6218e714c20a54",
+    "semantic_hash": ""
+  },
+  "player/Up Dash/Mc back dash0004.png": {
+    "mtime": 1793598389.7186134,
+    "seen": 1793598481.466513,
+    "ast_hash": "de82b373f13ed5f58c88567dfce2a4a8",
+    "semantic_hash": ""
+  },
+  "player/Up Dash/Mc back dash0005.png": {
+    "mtime": 1793598389.7207682,
+    "seen": 1793598481.4665136,
+    "ast_hash": "9f2a9e22a90a3198f6516f720f4e26f9",
+    "semantic_hash": ""
+  },
+  "player/Up Run/MC back run0001.png": {
+    "mtime": 1793598389.7207682,
+    "seen": 1793598481.4665143,
+    "ast_hash": "617946a75d17e7f22d7bcb8b0c954db3",
+    "semantic_hash": ""
+  },
+  "player/Up Run/MC back run0002.png": {
+    "mtime": 1793598389.7238867,
+    "seen": 1793598481.4665306,
+    "ast_hash": "8aba54c4da14c839407f4461fb6ecd35",
+    "semantic_hash": ""
+  },
+  "player/Up Run/MC back run0003.png": {
+    "mtime": 1793598389.7238867,
+    "seen": 1793598481.4665315,
+    "ast_hash": "5f518e5fe8e8dba4f36531fc0a407b34",
+    "semantic_hash": ""
+  },
+  "player/Up Run/MC back run0004.png": {
+    "mtime": 1793598389.7273102,
+    "seen": 1793598481.4665325,
+    "ast_hash": "a382ceb1b0ca5924576b9673649e488f",
+    "semantic_hash": ""
+  },
+  "player/Up Run/MC back run0005.png": {
+    "mtime": 1793598389.7283194,
+    "seen": 1793598481.4665332,
+    "ast_hash": "917cf514ea8c04287c39fcda403b5d29",
+    "semantic_hash": ""
+  },
+  "player/Up Run/MC back run0006.png": {
+    "mtime": 1793598389.7298572,
+    "seen": 1793598481.4665341,
+    "ast_hash": "829f385f214712096527f5e5901a743d",
+    "semantic_hash": ""
+  },
+  "player/Up Run/up run.png": {
+    "mtime": 1793598389.7320864,
+    "seen": 1793598481.4665349,
+    "ast_hash": "45edc60b004826faf89e4c1eb263ec28",
+    "semantic_hash": ""
+  },
+  "player/Up idle/Mc back idle0001.png": {
+    "mtime": 1793598389.7320864,
+    "seen": 1793598481.4665356,
+    "ast_hash": "b3673873a49e9d7bbdf6f0e37fb5a4ae",
+    "semantic_hash": ""
+  },
+  "player/Up idle/Mc back idle0002.png": {
+    "mtime": 1793598389.7320864,
+    "seen": 1793598481.4665368,
+    "ast_hash": "e28cfc81c24fc0c70547e4963ff71bb5",
+    "semantic_hash": ""
+  },
+  "player/Up idle/Mc back idle0003.png": {
+    "mtime": 1793598389.7320864,
+    "seen": 1793598481.4665375,
+    "ast_hash": "00bf63c6299bea8678b54d470fd4f727",
+    "semantic_hash": ""
+  },
+  "player/Up idle/Mc back idle0004.png": {
+    "mtime": 1793598389.7320864,
+    "seen": 1793598481.466538,
+    "ast_hash": "3ad25122f6b9a033cbc23b01f7c798e5",
+    "semantic_hash": ""
+  },
+  "player/Up idle/Mc back idle0005.png": {
+    "mtime": 1793598389.7393086,
+    "seen": 1793598481.466539,
+    "ast_hash": "6f5f4d2bae90ae67700d056c3231391f",
+    "semantic_hash": ""
+  },
+  "player/Up idle/Mc back idle0006.png": {
+    "mtime": 1793598389.7393086,
+    "seen": 1793598481.4665399,
+    "ast_hash": "b4ea0771fbc2c472e768df8c6fe5b5c2",
+    "semantic_hash": ""
+  },
+  "player/Up idle/up idle.png": {
+    "mtime": 1793598389.7393086,
+    "seen": 1793598481.4665408,
+    "ast_hash": "2ea779f6e78f0650d8af11103731eb96",
+    "semantic_hash": ""
+  },
+  "audio and videos/EnemyDie.wav": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.4665415,
+    "ast_hash": "24da2af6b2fe57d35713faa3161c3030",
+    "semantic_hash": ""
+  },
+  "audio and videos/Evade.wav": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.4665422,
+    "ast_hash": "20bddc2277df7a5e232108fe2cf259a3",
+    "semantic_hash": ""
+  },
+  "audio and videos/Hit.wav": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.4665432,
+    "ast_hash": "ef02fbb4d63089bd67f49df7bd19908f",
+    "semantic_hash": ""
+  },
+  "audio and videos/Hurt.wav": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.4665442,
+    "ast_hash": "8109e0ca9324f4b3c4bf391cd127b1a6",
+    "semantic_hash": ""
+  },
+  "audio and videos/Menu Move.wav": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.4665449,
+    "ast_hash": "d8e06b4295adcee8c1dd992eb07e8adf",
+    "semantic_hash": ""
+  },
+  "audio and videos/Menu Select.wav": {
+    "mtime": 1793598388.4765055,
+    "seen": 1793598481.4665456,
+    "ast_hash": "fe60ae31945be9c123fc41b6a9305d25",
+    "semantic_hash": ""
+  },
+  "audio and videos/Music.mp3": {
+    "mtime": 1793598388.4925263,
+    "seen": 1793598481.4665468,
+    "ast_hash": "c60a6db180c38a34cc80de6a10d9a8d7",
+    "semantic_hash": ""
+  },
+  "audio and videos/Pause.wav": {
+    "mtime": 1793598388.4925263,
+    "seen": 1793598481.4665475,
+    "ast_hash": "8d901be8269a729c8b1e7d6239cac216",
+    "semantic_hash": ""
+  },
+  "audio and videos/Sekiro OST - Sekiro, The One-armed Wolf.wav": {
+    "mtime": 1793598388.5882523,
+    "seen": 1793598481.4665482,
+    "ast_hash": "3bd729f00d8c309c2f6920dfb92e7d14",
+    "semantic_hash": ""
+  },
+  "audio and videos/Swipe.wav": {
+    "mtime": 1793598388.5882523,
+    "seen": 1793598481.4665492,
+    "ast_hash": "fd7a285758a7defd4f3b16b5384aa9e6",
+    "semantic_hash": ""
+  },
+  "audio and videos/Unpause.wav": {
+    "mtime": 1793598388.5882523,
+    "seen": 1793598481.4665504,
+    "ast_hash": "e5e02a267231010e00f0939f8aa8b7d5",
+    "semantic_hash": ""
+  },
+  "audio and videos/Wadaiko Matsuriza - Kabuki Gomen-Jyo [Japanese drums].wav": {
+    "mtime": 1793598389.0575526,
+    "seen": 1793598481.466551,
+    "ast_hash": "a8edfd1545605165125af04bd4bbc5ba",
+    "semantic_hash": ""
+  },
+  "audio and videos/poring dead.mp3": {
+    "mtime": 1793598389.0615718,
+    "seen": 1793598481.4665518,
+    "ast_hash": "35d1266dc5c1cce164c12c8479f6187a",
+    "semantic_hash": ""
+  },
+  "audio and videos/video/My Video.webm": {
+    "mtime": 1793598389.0636408,
+    "seen": 1793598481.4665527,
+    "ast_hash": "499feb20f5d5284b8757ba13a92de6c8",
+    "semantic_hash": ""
+  },
+  "audio and videos/video/VE Project 15.webm": {
+    "mtime": 1793598389.1868534,
+    "seen": 1793598481.4665537,
+    "ast_hash": "093d9fd952e66656b5776ce79b13f267",
+    "semantic_hash": ""
+  },
+  "audio and videos/video/asdasd - Copy.webm": {
+    "mtime": 1793598389.2474017,
+    "seen": 1793598481.4665544,
+    "ast_hash": "b435ad83eea796b7daf1104433535714",
+    "semantic_hash": ""
+  },
+  "audio and videos/video/asdasd.webm": {
+    "mtime": 1793598389.2886498,
+    "seen": 1793598481.466555,
+    "ast_hash": "b435ad83eea796b7daf1104433535714",
+    "semantic_hash": ""
+  },
+  "audio and videos/video/ending.webm": {
+    "mtime": 1793598389.3199103,
+    "seen": 1793598481.4665558,
+    "ast_hash": "2357d717d2f4401047e610e2614bccf9",
+    "semantic_hash": ""
+  },
+  "audio and videos/video/test_video.webm": {
+    "mtime": 1793598389.3199103,
+    "seen": 1793598481.466557,
+    "ast_hash": "4a1594ace2892a513ab1158afbbef7a1",
+    "semantic_hash": ""
+  }
+}
