@@ -1,47 +1,51 @@
 extends KinematicBody2D
 
-export var acceleration = 300
-export var max_speed = 50
-export var friction = 200
-export var wander_target_range = 4
-export var receives_knockback = true
+const DeathBurst = preload("res://effects/DeathBurst.tscn")
+const RUN_THRESHOLD := 10.0
+const KNOCKBACK_FORCE := 140.0
+const SOFT_PUSH_FORCE := 400.0
 
-enum {
-	IDLE,
-	WANDER,
-	CHASE
-}
+export var acceleration := 300
+export var max_speed := 50
+export var friction := 200
+export var wander_target_range := 4
+export var receives_knockback := true
+export var attack_range := 40.0
+export var attack_cooldown := 1.2
+export var lunge_speed := 0.0
 
-const RUN_THRESHOLD = 10.0
+enum { IDLE, WANDER, CHASE, ATTACK }
 
-var knockback = Vector2.ZERO
-var velocity = Vector2.ZERO
-var state = IDLE
-var dead = false
-var current_anim = ""
+var knockback := Vector2.ZERO
+var velocity := Vector2.ZERO
+var state := IDLE
+var dead := false
+var current_anim := ""
+var cooldown := 0.0
 
-onready var animation_tree = $AnimationTree
+onready var animation_tree: AnimationTree = $AnimationTree
 onready var animation_state = animation_tree.get("parameters/playback")
-onready var sprite = $AnimatedSprite
+onready var sprite: AnimatedSprite = $AnimatedSprite
 onready var stats = $Stats
 onready var player_detection_zone = $PlayerDetectionZone
 onready var hurtbox = $Hurtbox
 onready var soft_collision = $SoftCollision
 onready var wander_controller = $WanderController
-onready var hitbox_collision = $Hitbox/CollisionShape2D
+onready var hitbox_collision: CollisionShape2D = $Hitbox/CollisionShape2D
 
-func _ready():
+func _ready() -> void:
 	state = pick_random_state([IDLE, WANDER])
 
-func _physics_process(delta):
+func _physics_process(delta: float) -> void:
 	if dead:
 		return
 
 	if receives_knockback:
 		knockback = knockback.move_toward(Vector2.ZERO, friction * delta)
 		knockback = move_and_slide(knockback)
-		if dead:
-			return
+
+	if cooldown > 0.0:
+		cooldown -= delta
 
 	match state:
 		IDLE:
@@ -58,64 +62,91 @@ func _physics_process(delta):
 				state = pick_random_state([IDLE, WANDER])
 		CHASE:
 			var player = player_detection_zone.player
-			if player != null:
-				accelerate_towards_point(player.global_position, delta)
-			else:
+			if player == null:
 				state = IDLE
+			elif cooldown <= 0.0 and global_position.distance_to(player.global_position) <= attack_range:
+				start_attack(player)
+			else:
+				accelerate_towards_point(player.global_position, delta)
+		ATTACK:
+			velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
 
-	if soft_collision.is_colliding():
-		velocity += soft_collision.get_push_vector() * delta * 400
+	velocity += soft_collision.get_push_vector() * delta * SOFT_PUSH_FORCE
 
 	velocity = move_and_slide(velocity)
-	if dead or stats.health <= 0:
-		die()
-		return
+	if state != ATTACK:
+		_play("run" if velocity.length() > RUN_THRESHOLD else "idle")
 
-	_play("run" if velocity.length() > RUN_THRESHOLD else "idle")
-
-func accelerate_towards_point(point, delta):
-	var direction = global_position.direction_to(point)
+func accelerate_towards_point(point: Vector2, delta: float) -> void:
+	var direction := global_position.direction_to(point)
 	velocity = velocity.move_toward(direction * max_speed, acceleration * delta)
 	if abs(velocity.x) > 1.0:
 		sprite.flip_h = velocity.x < 0
 
-func update_wander():
+func start_attack(player: Node2D) -> void:
+	state = ATTACK
+	velocity = Vector2.ZERO
+	sprite.flip_h = player.global_position.x < global_position.x
+	_play("attack")
+
+func lunge() -> void:
+	var player = player_detection_zone.player
+	if dead or player == null:
+		return
+	velocity = global_position.direction_to(player.global_position) * lunge_speed
+
+func attack_animation_finished() -> void:
+	if dead:
+		return
+	cooldown = attack_cooldown
+	state = CHASE
+
+func update_wander() -> void:
 	state = pick_random_state([IDLE, WANDER])
 	wander_controller.start_wander_timer(rand_range(1, 3))
 
-func seek_player():
+func seek_player() -> void:
 	if player_detection_zone.can_see_player():
 		state = CHASE
 
-func pick_random_state(state_list):
+func pick_random_state(state_list: Array) -> int:
 	state_list.shuffle()
 	return state_list.pop_front()
 
-func die():
+func die() -> void:
 	if dead:
 		return
 	dead = true
 	velocity = Vector2.ZERO
 	knockback = Vector2.ZERO
+	sprite.modulate = Color.white
 	hitbox_collision.set_deferred("disabled", true)
 	_play("defeat")
+	var burst = DeathBurst.instance()
+	get_tree().current_scene.add_child(burst)
+	burst.global_position = sprite.global_position
+	burst.reset_physics_interpolation()
+	Game.shake(0.4)
 
-func _play(anim_name):
+func _play(anim_name: String) -> void:
 	if current_anim == anim_name:
 		return
 	current_anim = anim_name
 	animation_state.travel(anim_name)
 
-func _on_Hurtbox_area_entered(area):
+func _on_Hurtbox_area_entered(area: Area2D) -> void:
 	if dead:
 		return
 	stats.health -= area.damage
 	if receives_knockback and area.get("knockback_vector") != null:
-		knockback = area.knockback_vector * 140
+		knockback = area.knockback_vector * KNOCKBACK_FORCE
 	hurtbox.create_hit_effect()
+	Game.flash(sprite)
+	Game.hitstop(0.05)
+	Game.shake(0.25)
 
-func _on_Stats_no_health():
+func _on_Stats_no_health() -> void:
 	die()
 
-func ending_scene():
+func ending_scene() -> void:
 	pass

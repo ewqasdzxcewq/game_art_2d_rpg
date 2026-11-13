@@ -1,37 +1,37 @@
 extends Area2D
 
-const hit_effect = preload("res://effects/Hit Effect/HitEffect.tscn")
-
-var invincible = false setget set_invincible
-
-onready var timer = $Timer
-onready var collision_shape = $CollisionShape2D
+const HitEffect = preload("res://effects/Hit Effect/HitEffect.tscn")
 
 signal invincibility_started
 signal invincibility_ended
 
-func set_invincible(value):
+var invincible := false setget set_invincible
+
+onready var timer: Timer = $Timer
+onready var collision_shape: CollisionShape2D = $CollisionShape2D
+
+func set_invincible(value: bool) -> void:
 	invincible = value
-	if invincible == true:
+	if invincible:
 		emit_signal("invincibility_started")
 	else:
 		emit_signal("invincibility_ended")
 
-func start_invicibility(duration):
+func start_invincibility(duration: float) -> void:
 	self.invincible = true
 	timer.start(duration)
 
-func create_hit_effect():
-	var effect = hit_effect.instance()
-	var main = get_tree().current_scene
-	main.add_child(effect)
+func create_hit_effect() -> void:
+	var effect = HitEffect.instance()
+	get_tree().current_scene.add_child(effect)
 	effect.global_position = global_position
+	effect.reset_physics_interpolation()
 
-func _on_Timer_timeout():
+func _on_Timer_timeout() -> void:
 	self.invincible = false
 
-func _on_Hurtbox_invincibility_started():
+func _on_Hurtbox_invincibility_started() -> void:
 	collision_shape.set_deferred("disabled", true)
 
-func _on_Hurtbox_invincibility_ended():
-	collision_shape.disabled = false
+func _on_Hurtbox_invincibility_ended() -> void:
+	collision_shape.set_deferred("disabled", false)

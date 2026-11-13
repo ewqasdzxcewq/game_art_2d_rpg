@@ -1,120 +1,141 @@
 extends KinematicBody2D
 
-var key_up = "ui_up"
-var key_down = "ui_down"
-var key_left = "ui_left"
-var key_right = "ui_right"
-var key_attack = "ui_accept"
-var key_dash = "dash"
+const ACCELERATION := 900.0
+const MAX_SPEED := 150.0
+const FRICTION := 1100.0
+const DASH_SPEED := 320.0
+const DASH_IFRAMES := 0.25
+const DASH_COOLDOWN_TIME := 0.5
+const HURT_IFRAMES := 1.0
+const HURT_KNOCKBACK := 180.0
+const BLINK_INTERVAL := 0.08
+const DUST_MIN_SPEED := 40.0
+const AFTERIMAGE_INTERVAL := 0.035
+const AFTERIMAGE_COLOR := Color(0.55, 0.8, 1.0, 0.55)
+const HurtSound = preload("res://audio and videos/Hurt.wav")
+const BLEND_PATHS := [
+	"parameters/idle/blend_position",
+	"parameters/run/blend_position",
+	"parameters/attack/blend_position",
+	"parameters/dash/blend_position",
+	"parameters/defeat/blend_position",
+]
 
-const acceleration = 900
-const max_speed = 150
-const friction = 1100
-const dash_speed = 320
-const dash_iframes = 0.25
-const dash_cooldown_time = 0.5
-const hurt_sound = preload("res://audio and videos/Hurt.wav")
+enum { MOVE, DASH, ATTACK, DEFEAT }
 
-enum {
-	MOVE,
-	DASH,
-	ATTACK,
-	DEFEAT
-}
-
-var state = MOVE
-var velocity = Vector2.ZERO
-var dash_vector = Vector2.DOWN
-var dash_cooldown = 0.0
-var current_anim = ""
+var state := MOVE
+var velocity := Vector2.ZERO
+var dash_vector := Vector2.DOWN
+var dash_cooldown := 0.0
+var current_anim := ""
 var stats = PlayerStats
-var blinking = false
-var blink_time = 0.0
+var blinking := false
+var blink_time := 0.0
+var afterimage_time := 0.0
 
-onready var animation_tree = $AnimationTree
+onready var sprite: AnimatedSprite = $AnimatedSprite
+onready var run_dust: CPUParticles2D = $RunDust
+onready var animation_tree: AnimationTree = $AnimationTree
 onready var animation_state = animation_tree.get("parameters/playback")
 onready var sword_hitbox = $HitboxPivot/SwordHitbox
 onready var hurtbox = $Hurtbox
 
-func _ready():
-	randomize()
+func _enter_tree() -> void:
+	if Checkpoint.last_position != null:
+		global_position = Checkpoint.last_position
+
+func _ready() -> void:
+	stats.health = stats.max_health
 	stats.connect("no_health", self, "start_defeat")
 	hurtbox.connect("invincibility_started", self, "_on_invincibility_started")
 	hurtbox.connect("invincibility_ended", self, "_on_invincibility_ended")
 	animation_tree.active = true
-	sword_hitbox.knockback_vector = dash_vector
+	_face(dash_vector)
+	reset_physics_interpolation()
 
-func _process(delta):
+func _process(delta: float) -> void:
 	if not blinking:
 		return
 	blink_time += delta
-	modulate.a = 1.0 if int(blink_time / 0.08) % 2 == 0 else 0.35
+	modulate.a = 1.0 if int(blink_time / BLINK_INTERVAL) % 2 == 0 else 0.35
 
-func _physics_process(delta):
+func _physics_process(delta: float) -> void:
 	if dash_cooldown > 0.0:
 		dash_cooldown -= delta
-	if stats.health <= 0 and state != DEFEAT:
-		start_defeat()
 	match state:
 		MOVE:
 			move_state(delta)
 		DASH:
 			dash_state(delta)
 		ATTACK:
-			attack_state(delta)
+			attack_state()
 		DEFEAT:
-			defeat_state(delta)
+			velocity = Vector2.ZERO
+	run_dust.emitting = state == DASH or (state == MOVE and velocity.length() > DUST_MIN_SPEED)
 
-func move_state(delta):
-	var input_vector = Vector2.ZERO
-	input_vector.x = Input.get_action_strength(key_right) - Input.get_action_strength(key_left)
-	input_vector.y = Input.get_action_strength(key_down) - Input.get_action_strength(key_up)
-	input_vector = input_vector.normalized()
+func move_state(delta: float) -> void:
+	var input_vector := Vector2(
+		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
+		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	).normalized()
 
 	if input_vector != Vector2.ZERO:
-		dash_vector = input_vector
-		sword_hitbox.knockback_vector = input_vector
-		animation_tree.set("parameters/idle/blend_position", input_vector)
-		animation_tree.set("parameters/run/blend_position", input_vector)
-		animation_tree.set("parameters/attack/blend_position", input_vector)
-		animation_tree.set("parameters/dash/blend_position", input_vector)
-		animation_tree.set("parameters/defeat/blend_position", input_vector)
+		if input_vector != dash_vector:
+			_face(input_vector)
 		_play("run")
-		velocity = velocity.move_toward(input_vector * max_speed, acceleration * delta)
+		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
 		_play("idle")
-		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 
 	move()
 
-	if state == DEFEAT:
-		return
-
-	if Input.is_action_just_pressed(key_dash) and dash_cooldown <= 0.0:
+	if Input.is_action_just_pressed("dash") and dash_cooldown <= 0.0:
 		start_dash()
-
-	if Input.is_action_just_pressed(key_attack):
+	elif Input.is_action_just_pressed("ui_accept"):
 		state = ATTACK
 
-func start_dash():
-	dash_vector = dash_vector.normalized()
-	if dash_vector == Vector2.ZERO:
-		dash_vector = Vector2.DOWN
-	state = DASH
-	dash_cooldown = dash_cooldown_time
-	if not hurtbox.invincible:
-		hurtbox.start_invicibility(dash_iframes)
+func _face(direction: Vector2) -> void:
+	dash_vector = direction
+	sword_hitbox.knockback_vector = direction
+	for path in BLEND_PATHS:
+		animation_tree.set(path, direction)
 
-func dash_state(_delta):
-	velocity = dash_vector.normalized() * dash_speed
+func start_dash() -> void:
+	state = DASH
+	dash_cooldown = DASH_COOLDOWN_TIME
+	afterimage_time = 0.0
+	if not hurtbox.invincible:
+		hurtbox.start_invincibility(DASH_IFRAMES)
+
+func dash_state(delta: float) -> void:
+	velocity = dash_vector * DASH_SPEED
 	_play("dash")
 	move()
+	afterimage_time -= delta
+	if afterimage_time <= 0.0:
+		afterimage_time = AFTERIMAGE_INTERVAL
+		_spawn_afterimage()
 
-func attack_state(_delta):
+func _spawn_afterimage() -> void:
+	var ghost := Sprite.new()
+	ghost.texture = sprite.frames.get_frame(sprite.animation, sprite.frame)
+	ghost.centered = sprite.centered
+	ghost.offset = sprite.offset
+	ghost.flip_h = sprite.flip_h
+	ghost.modulate = AFTERIMAGE_COLOR
+	get_parent().add_child(ghost)
+	ghost.global_transform = sprite.global_transform
+	ghost.reset_physics_interpolation()
+	var tween := ghost.create_tween()
+	tween.tween_property(ghost, "modulate:a", 0.0, 0.25)
+	tween.tween_callback(ghost, "queue_free")
+
+func attack_state() -> void:
 	velocity = Vector2.ZERO
 	_play("attack")
 
-func start_defeat():
+func start_defeat() -> void:
 	if state == DEFEAT:
 		return
 	state = DEFEAT
@@ -123,58 +144,53 @@ func start_defeat():
 	modulate.a = 1.0
 	_play("defeat")
 
-func defeat_state(_delta):
-	velocity = Vector2.ZERO
-
-func move():
+func move() -> void:
 	velocity = move_and_slide(velocity)
 
-func _play(anim_name):
+func _play(anim_name: String) -> void:
 	if current_anim == anim_name:
 		return
 	current_anim = anim_name
 	animation_state.travel(anim_name)
 
-func dash_animation_finished():
+func dash_animation_finished() -> void:
 	if state == DEFEAT:
 		return
-	velocity = velocity * 0.8
+	velocity *= 0.8
 	state = MOVE
 
-func attack_animation_finished():
+func attack_animation_finished() -> void:
 	if state == DEFEAT:
 		return
 	state = MOVE
 
-func defeat_animation_finished():
-	get_tree().reload_current_scene()
-	stats.health = stats.max_health
+func defeat_animation_finished() -> void:
+	Game.reload_scene()
 
-func _on_Hurtbox_area_entered(_area):
+func _on_Hurtbox_area_entered(area: Area2D) -> void:
 	if state == DEFEAT or hurtbox.invincible:
 		return
 	stats.health -= 1
-	hurtbox.start_invicibility(1)
+	hurtbox.start_invincibility(HURT_IFRAMES)
 	hurtbox.create_hit_effect()
-	_play_once(hurt_sound)
+	Game.play_sfx(HurtSound)
+	Game.flash(sprite, 0.25)
+	Game.hitstop(0.08)
+	Game.shake(0.55)
+	if state == MOVE:
+		velocity = area.global_position.direction_to(global_position) * HURT_KNOCKBACK
 
-func _play_once(stream):
-	var sfx = AudioStreamPlayer.new()
-	sfx.stream = stream
-	add_child(sfx)
-	sfx.play()
-	sfx.connect("finished", sfx, "queue_free")
-
-func _on_invincibility_started():
+func _on_invincibility_started() -> void:
 	blinking = true
 	blink_time = 0.0
 
-func _on_invincibility_ended():
+func _on_invincibility_ended() -> void:
 	blinking = false
 	modulate.a = 1.0
 
-func set_active(active):
+func set_active(active: bool) -> void:
 	velocity = Vector2.ZERO
+	run_dust.emitting = false
 	_play("idle")
 	set_physics_process(active)
 	set_process(active)

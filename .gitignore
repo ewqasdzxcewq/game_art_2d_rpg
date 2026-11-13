@@ -1,0 +1,13 @@
+# Godot 3
+.import/
+export.cfg
+*.translation
+.mono/
+data_*/
+mono_crash.*.json
+
+# Export output
+build/
+
+# Tooling
+graphify-out/

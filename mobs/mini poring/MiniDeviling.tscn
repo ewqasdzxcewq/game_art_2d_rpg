@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=73 format=2]
 
 [ext_resource path="res://mobs/Enemy.gd" type="Script" id=1]
 [ext_resource path="res://scripts/hurt and hit boxes/Hitbox.tscn" type="PackedScene" id=2]
@@ -109,14 +109,29 @@ blend_point_3/pos = Vector2( 0, -0.9 )
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=33]
 
+[sub_resource type="AnimationNodeAnimation" id=50]
+animation = "attack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=51]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=52]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=53]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=54]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=55]
+
 [sub_resource type="AnimationNodeStateMachine" id=46]
+states/attack/node = SubResource( 50 )
+states/attack/position = Vector2( 288, 183 )
 states/defeat/node = SubResource( 17 )
 states/defeat/position = Vector2( 43, 83 )
 states/idle/node = SubResource( 22 )
 states/idle/position = Vector2( 207, 83 )
 states/run/node = SubResource( 27 )
 states/run/position = Vector2( 368, 83 )
-transitions = [ "defeat", "idle", SubResource( 30 ), "idle", "defeat", SubResource( 31 ), "idle", "run", SubResource( 32 ), "run", "idle", SubResource( 33 ) ]
+transitions = [ "defeat", "idle", SubResource( 30 ), "idle", "defeat", SubResource( 31 ), "idle", "run", SubResource( 32 ), "run", "idle", SubResource( 33 ), "idle", "attack", SubResource( 51 ), "attack", "idle", SubResource( 52 ), "run", "attack", SubResource( 53 ), "attack", "run", SubResource( 54 ), "attack", "defeat", SubResource( 55 ) ]
 start_node = "idle"
 graph_offset = Vector2( -256, -23 )
 
@@ -227,6 +242,64 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
 }
 
+[sub_resource type="Animation" id=56]
+resource_name = "attack"
+length = 0.8
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.35, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.4, 0.4, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "lunge"
+}, {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+
 [sub_resource type="CircleShape2D" id=6]
 radius = 20.0998
 
@@ -243,11 +316,12 @@ radius = 11.0
 collision_layer = 16
 collision_mask = 3
 script = ExtResource( 1 )
+attack_range = 60.0
+lunge_speed = 160.0
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 46 )
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/playback = SubResource( 47 )
 parameters/defeat/blend_position = Vector2( 0, 0 )
 parameters/idle/blend_position = Vector2( 0, 0 )
@@ -255,7 +329,7 @@ parameters/run/blend_position = Vector2( 0, 0 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -0.999975, -21 )
-scale = Vector2( 0.0555556, 0.0555555 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 frame = 1
 
@@ -267,6 +341,7 @@ shape = SubResource( 49 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 3 )
+anims/attack = SubResource( 56 )
 anims/defeat = SubResource( 48 )
 anims/idle = SubResource( 4 )
 anims/run = SubResource( 5 )
@@ -293,6 +368,7 @@ collision_mask = 4
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 position = Vector2( -1, -9 )
 shape = SubResource( 8 )
+disabled = true
 
 [node name="SoftCollision" parent="." instance=ExtResource( 3 )]
 
@@ -306,9 +382,16 @@ shape = SubResource( 9 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 34 )
+bus = "SFX"
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+rect = Rect2( -33, -51, 64, 60 )
+physics_process_parent = true
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
+[connection signal="screen_entered" from="VisibilityEnabler2D" to="AnimationTree" method="set_active" binds= [ true ]]
+[connection signal="screen_exited" from="VisibilityEnabler2D" to="AnimationTree" method="set_active" binds= [ false ]]
 
 [editable path="Hurtbox"]
 [editable path="PlayerDetectionZone"]

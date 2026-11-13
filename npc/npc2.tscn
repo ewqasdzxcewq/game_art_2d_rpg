@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://npc/npc2.gd" type="Script" id=1]
+[ext_resource path="res://npc/NPC.gd" type="Script" id=1]
 [ext_resource path="res://npc/idle/NPC0004.png" type="Texture" id=3]
 [ext_resource path="res://npc/idle/NPC0007.png" type="Texture" id=4]
 [ext_resource path="res://npc/idle/NPC0001.png" type="Texture" id=5]
@@ -29,7 +29,7 @@ script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, -34 )
-scale = Vector2( 0.0648148, 0.0648148 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 frame = 3
 playing = true

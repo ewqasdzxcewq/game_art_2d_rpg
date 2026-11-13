@@ -1,23 +1,30 @@
 extends Node
 
-var label
+const UITheme = preload("res://UI/theme.tres")
+const OFFSET := Vector2(-20, -76)
+const BOB_HEIGHT := 2.0
+const BOB_SPEED := 4.0
+const FADE_TIME := 0.15
 
-func _ready():
-	var layer = CanvasLayer.new()
+var label := Label.new()
+var showing := false
+var time := 0.0
+
+func _ready() -> void:
+	var layer := CanvasLayer.new()
 	layer.layer = 40
 	add_child(layer)
-	label = Label.new()
-	label.text = "E  Talk"
-	label.add_color_override("font_color", Color(1, 0.94, 0.78))
-	label.add_color_override("font_color_shadow", Color(0, 0, 0))
-	label.add_constant_override("shadow_offset_x", 1)
-	label.add_constant_override("shadow_offset_y", 1)
+	label.theme = UITheme
+	label.text = "Talk" if OS.has_touchscreen_ui_hint() else "E  Talk"
+	label.modulate.a = 0.0
 	layer.add_child(label)
-	label.visible = false
 
-func show_at(world_position, show):
-	label.visible = show
-	if not show:
+func show_at(world_position: Vector2, show: bool) -> void:
+	if show != showing:
+		showing = show
+		label.create_tween().tween_property(label, "modulate:a", 1.0 if show else 0.0, FADE_TIME)
+	if label.modulate.a <= 0.0:
 		return
-	var screen = get_parent().get_viewport().get_canvas_transform().xform(world_position)
-	label.rect_position = screen + Vector2(-22, -56)
+	time += get_process_delta_time()
+	var screen: Vector2 = get_parent().get_viewport().get_canvas_transform().xform(world_position)
+	label.rect_position = screen + OFFSET + Vector2(0, sin(time * BOB_SPEED) * BOB_HEIGHT)

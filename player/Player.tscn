@@ -1,5 +1,7 @@
-[gd_scene load_steps=168 format=2]
+[gd_scene load_steps=170 format=2]
 
+[ext_resource path="res://effects/RunDust.tscn" type="PackedScene" id=200]
+[ext_resource path="res://UI/TouchControls.gd" type="Script" id=201]
 [ext_resource path="res://player/Side Idle/idle1.png" type="Texture" id=1]
 [ext_resource path="res://player/Side Idle/idle2.png" type="Texture" id=2]
 [ext_resource path="res://player/Side Idle/idle3.png" type="Texture" id=3]
@@ -927,14 +929,17 @@ height = 1.29998
 radius = 24.0
 height = 16.0
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=[ "player" ]]
 collision_layer = 66
 collision_mask = 255
 script = ExtResource( 37 )
 
+[node name="RunDust" parent="." instance=ExtResource( 200 )]
+position = Vector2( 0, 2 )
+
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -24 )
-scale = Vector2( 0.069, 0.069 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 frame = 1
 
@@ -998,6 +1003,10 @@ shape = SubResource( 49 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 110 )
+bus = "SFX"
+
+[node name="TouchControls" type="CanvasLayer" parent="."]
+script = ExtResource( 201 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 

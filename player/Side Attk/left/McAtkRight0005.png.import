@@ -2,25 +2,27 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/McAtkRight0005.png-11e436618b9f293390a65463c1826e2b.stex"
+path.s3tc="res://.import/McAtkRight0005.png-11e436618b9f293390a65463c1826e2b.s3tc.stex"
+path.etc2="res://.import/McAtkRight0005.png-11e436618b9f293390a65463c1826e2b.etc2.stex"
 metadata={
-"vram_texture": false
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://player/Side Attk/left/McAtkRight0005.png"
-dest_files=[ "res://.import/McAtkRight0005.png-11e436618b9f293390a65463c1826e2b.stex" ]
+dest_files=[ "res://.import/McAtkRight0005.png-11e436618b9f293390a65463c1826e2b.s3tc.stex", "res://.import/McAtkRight0005.png-11e436618b9f293390a65463c1826e2b.etc2.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,6 +32,6 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
-size_limit=0
+size_limit=207
 detect_3d=true
 svg/scale=1.0

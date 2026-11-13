@@ -7,7 +7,7 @@
 [ext_resource path="res://npc/monk/NPC MonkR0004.png" type="Texture" id=5]
 [ext_resource path="res://npc/monk/NPC MonkR0005.png" type="Texture" id=6]
 [ext_resource path="res://npc/monk/NPC MonkR0006.png" type="Texture" id=7]
-[ext_resource path="res://npc/monk/Monk.gd" type="Script" id=8]
+[ext_resource path="res://npc/NPC.gd" type="Script" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -28,7 +28,7 @@ script = ExtResource( 8 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -2, -34 )
-scale = Vector2( 0.0648148, 0.0648148 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 frame = 3
 playing = true

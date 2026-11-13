@@ -12,11 +12,13 @@ config_version=4
 
 config/name="The Last Ronin"
 run/main_scene="res://UI/Main Menu/MainMenu.tscn"
+config/icon="res://icon.png"
 
 [autoload]
 
 PlayerStats="*res://player/PlayerStats.tscn"
 Checkpoint="*res://assets/checkpoint/Checkpoint.gd"
+Game="*res://scripts/Game.gd"
 
 [display]
 
@@ -24,7 +26,9 @@ window/size/width=640
 window/size/height=360
 window/size/test_width=1280
 window/size/test_height=720
+window/handheld/orientation="sensor_landscape"
 window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [gui]
 
@@ -57,7 +61,9 @@ use={
 
 [physics]
 
+common/physics_jitter_fix=0.0
 common/enable_pause_aware_picking=true
+common/physics_interpolation=true
 
 [rendering]
 

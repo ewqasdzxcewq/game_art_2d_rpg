@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://effects/light_soft.png" type="Texture" id=1]
 
 [sub_resource type="StreamTexture" id=102]
 flags = 4
@@ -18,3 +20,10 @@ texture = SubResource( 102 )
 position = Vector2( 3.51625, -93.4432 )
 scale = Vector2( 1.12621, 1.15643 )
 shape = SubResource( 1 )
+
+[node name="Glow" type="Light2D" parent="."]
+position = Vector2( 1, -120 )
+texture = ExtResource( 1 )
+texture_scale = 4.5
+color = Color( 1, 0.76, 0.45, 1 )
+energy = 0.55

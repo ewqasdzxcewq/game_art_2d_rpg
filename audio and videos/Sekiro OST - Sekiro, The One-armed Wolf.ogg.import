@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sekiro OST - Sekiro, The One-armed Wolf.ogg-cf8e498f9696c9ff153ffc930d786917.oggstr"
+
+[deps]
+
+source_file="res://audio and videos/Sekiro OST - Sekiro, The One-armed Wolf.ogg"
+dest_files=[ "res://.import/Sekiro OST - Sekiro, The One-armed Wolf.ogg-cf8e498f9696c9ff153ffc930d786917.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://effects/OneShotParticles.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.4, 1 )
+colors = PoolColorArray( 1, 0.95, 0.8, 1, 0.85, 0.25, 0.3, 0.9, 0.25, 0.08, 0.15, 0 )
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.2 ), 0.0, 0.0, 0, 0 ]
+
+[node name="DeathBurst" type="CPUParticles2D"]
+z_index = 5
+emitting = false
+amount = 28
+lifetime = 0.6
+one_shot = true
+explosiveness = 0.95
+local_coords = false
+emission_shape = 1
+emission_sphere_radius = 6.0
+direction = Vector2( 0, -1 )
+spread = 180.0
+gravity = Vector2( 0, 60 )
+initial_velocity = 90.0
+initial_velocity_random = 0.6
+damping = 120.0
+scale_amount = 3.0
+scale_amount_random = 0.5
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 1 )
+script = ExtResource( 1 )
