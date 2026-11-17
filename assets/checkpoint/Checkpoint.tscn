@@ -120,3 +120,4 @@ color = Color( 1, 0.62, 0.32, 1 )
 energy = 0.45
 
 [connection signal="body_entered" from="." to="." method="_on_CheckpointObject_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_CheckpointObject_body_exited"]

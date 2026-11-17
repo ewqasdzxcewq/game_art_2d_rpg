@@ -8,6 +8,11 @@ const SETTINGS_PATH := "user://settings.cfg"
 const VOLUME_BUSES := ["Music", "SFX"]
 const FPS_OPTIONS := [30, 60, 120, 144, 0]
 const HitFlashShader = preload("res://effects/hit_flash.shader")
+const UITheme = preload("res://UI/theme.tres")
+const POPUP_RISE := 10.0
+const DIFFICULTY_NAMES := ["Normal", "Hard", "Insane"]
+
+enum { NORMAL, HARD, INSANE }
 
 var _changing := false
 var _hitstop_end_msec := 0
@@ -111,6 +116,21 @@ func flash(item: CanvasItem, duration := 0.2) -> void:
 		item.material = material
 	item.create_tween().tween_property(material, "shader_param/flash", 0.0, duration).from(1.0)
 
+func popup_label(world_position: Vector2, text: String, color: Color) -> void:
+	var label := Label.new()
+	label.theme = UITheme
+	label.text = text
+	label.add_color_override("font_color", color)
+	add_child(label)
+	var start: Vector2 = get_viewport().get_canvas_transform().xform(world_position)
+	label.rect_position = start
+	var tween := label.create_tween()
+	tween.tween_property(label, "modulate:a", 1.0, 0.2).from(0.0)
+	tween.parallel().tween_property(label, "rect_position:y", start.y - POPUP_RISE, 1.4) \
+		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tween.tween_property(label, "modulate:a", 0.0, 0.4)
+	tween.tween_callback(label, "queue_free")
+
 func get_bus_volume(bus_name: String) -> float:
 	return float(_settings.get_value("audio", bus_name, 1.0))
 
@@ -123,6 +143,18 @@ func get_shake_strength() -> float:
 
 func set_shake_strength(value: float) -> void:
 	_save_setting("video", "shake", value)
+
+func get_difficulty() -> int:
+	return int(_settings.get_value("game", "difficulty", NORMAL))
+
+func set_difficulty(value: int) -> void:
+	_save_setting("game", "difficulty", value)
+
+func get_best_score() -> int:
+	return int(_settings.get_value("endless", "best_score", 0))
+
+func set_best_score(value: int) -> void:
+	_save_setting("endless", "best_score", value)
 
 func get_max_fps() -> int:
 	return int(_settings.get_value("video", "max_fps", 60 if OS.has_touchscreen_ui_hint() else 0))

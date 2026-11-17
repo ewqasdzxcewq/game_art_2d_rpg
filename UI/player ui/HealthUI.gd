@@ -12,6 +12,8 @@ var trail_tween: SceneTreeTween
 onready var bar: Panel = $Bar
 onready var fill: ProgressBar = $Bar/Fill
 onready var trail: ProgressBar = $Bar/Trail
+onready var gourd_label: Label = $Gourd
+onready var level_label: Label = $Level
 onready var rest_position := bar.rect_position
 
 func set_health(value: int) -> void:
@@ -38,12 +40,21 @@ func set_max_health(value: int) -> void:
 		trail.max_value = max_health
 	self.health = int(min(health, max_health))
 
+func set_gourd(count: int) -> void:
+	gourd_label.text = "Gourd x%d" % count
+
+func set_level(level: int, xp: int, needed: int) -> void:
+	level_label.text = "Lv %d  XP %d/%d" % [level, xp, needed]
+
 func _ready() -> void:
+	add_to_group("gourd_ui")
 	bar.rect_pivot_offset = bar.rect_size / 2.0
 	self.max_health = PlayerStats.max_health
 	self.health = PlayerStats.health
 	PlayerStats.connect("health_changed", self, "set_health")
 	PlayerStats.connect("max_health_changed", self, "set_max_health")
+	set_level(Checkpoint.level, Checkpoint.xp, Checkpoint.xp_needed())
+	Checkpoint.connect("xp_changed", self, "set_level")
 
 func _shake() -> void:
 	var tween := bar.create_tween()

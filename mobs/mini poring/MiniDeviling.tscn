@@ -166,7 +166,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=48]
 resource_name = "defeat"
-length = 0.6
+length = 0.9
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
 tracks/0/interp = 1
@@ -174,10 +174,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 20, 21, 22, 23, 24, 25, 25 ]
+"values": [ 17, 18, 19, 20, 21, 22, 23, 24, 25 ]
 }
 tracks/1/type = "method"
 tracks/1/path = NodePath(".")
@@ -186,7 +186,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0.6 ),
+"times": PoolRealArray( 0.9 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -227,7 +227,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "run"
-length = 0.8
+length = 0.9
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -318,6 +318,7 @@ collision_mask = 3
 script = ExtResource( 1 )
 attack_range = 60.0
 lunge_speed = 160.0
+staggers = true
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 46 )

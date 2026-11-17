@@ -15,8 +15,12 @@ onready var base_y := sprite.position.y
 onready var half_height: float = sprite.frames.get_frame(sprite.animation, 0).get_height() * base_scale.y / 2.0
 
 func _ready() -> void:
+	add_to_group("interactable")
 	prompt = TalkPrompt.new()
 	add_child(prompt)
+
+func interact_text() -> String:
+	return "Talk" if player_near and dialogue else ""
 
 func _process(delta: float) -> void:
 	time += delta

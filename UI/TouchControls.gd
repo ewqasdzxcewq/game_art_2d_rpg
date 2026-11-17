@@ -13,7 +13,8 @@ const TEXT_COLOR := Color(1, 0.94, 0.78)
 const BUTTONS := [
 	{"action": "ui_accept", "text": "Attack", "position": Vector2(584, 296), "radius": 30.0},
 	{"action": "dash", "text": "Dash", "position": Vector2(516, 324), "radius": 22.0},
-	{"action": "use", "text": "Talk", "position": Vector2(532, 254), "radius": 22.0},
+	{"action": "use", "text": "", "position": Vector2(532, 254), "radius": 22.0},
+	{"action": "heal", "text": "Heal", "position": Vector2(600, 228), "radius": 22.0},
 	{"action": "ui_cancel", "text": "II", "position": Vector2(616, 24), "radius": 14.0},
 ]
 
@@ -21,9 +22,11 @@ var stick_index := -1
 var stick_vector := Vector2.ZERO
 var pressed := {}
 var canvas: Control
+var use_text := ""
 
 func _ready() -> void:
 	if not OS.has_touchscreen_ui_hint():
+		set_process(false)
 		queue_free()
 		return
 	pause_mode = PAUSE_MODE_PROCESS
@@ -39,6 +42,20 @@ func _exit_tree() -> void:
 	for action in pressed.values():
 		_send(action, false)
 
+func _process(_delta: float) -> void:
+	var text := ""
+	for node in get_tree().get_nodes_in_group("interactable"):
+		text = node.interact_text()
+		if text != "":
+			break
+	if text == use_text:
+		return
+	use_text = text
+	canvas.update()
+
+func _visible(button: Dictionary) -> bool:
+	return button.action != "use" or use_text != ""
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		if event.pressed:
@@ -50,7 +67,7 @@ func _input(event: InputEvent) -> void:
 
 func _touch_pressed(index: int, position: Vector2) -> void:
 	for button in BUTTONS:
-		if position.distance_to(button.position) <= button.radius + TOUCH_MARGIN:
+		if _visible(button) and position.distance_to(button.position) <= button.radius + TOUCH_MARGIN:
 			pressed[index] = button.action
 			_send(button.action, true)
 			canvas.update()
@@ -97,7 +114,10 @@ func _draw_controls() -> void:
 	canvas.draw_circle(STICK_CENTER + stick_vector * STICK_RADIUS, KNOB_RADIUS, EDGE_COLOR)
 	var font := canvas.get_font("font", "Label")
 	for button in BUTTONS:
+		if not _visible(button):
+			continue
+		var text: String = use_text if button.action == "use" else button.text
 		canvas.draw_circle(button.position, button.radius, PRESSED_COLOR if pressed.values().has(button.action) else BASE_COLOR)
 		canvas.draw_arc(button.position, button.radius, 0.0, TAU, 32, EDGE_COLOR)
-		var size := font.get_string_size(button.text)
-		canvas.draw_string(font, button.position - size / 2 + Vector2(0, font.get_ascent()), button.text, TEXT_COLOR)
+		var size := font.get_string_size(text)
+		canvas.draw_string(font, button.position - size / 2 + Vector2(0, font.get_ascent()), text, TEXT_COLOR)

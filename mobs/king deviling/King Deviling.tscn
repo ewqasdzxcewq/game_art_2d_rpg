@@ -208,7 +208,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.5, 0.7 ),
+"times": PoolRealArray( 0, 0.16, 0.32, 0.48, 0.64 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 1, 2, 3, 4 ]
@@ -305,6 +305,7 @@ collision_layer = 17
 script = ExtResource( 12 )
 attack_range = 120.0
 attack_cooldown = 2.0
+xp_reward = 10
 boss_music = ExtResource( 200 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]

@@ -5,13 +5,17 @@ const SelectSound = preload("res://audio and videos/Menu Select.wav")
 const FOCUS_SCALE := Vector2(1.08, 1.08)
 const TITLE_RISE := 14.0
 const WORLD_SCENE := "res://test world 2.tscn"
+const ENDLESS_SCENE := "res://endless/Endless.tscn"
 
 onready var title: Sprite = $ColorRect/IRUGA
 onready var buttons: VBoxContainer = $VBoxContainer
 onready var continue_button: Button = $VBoxContainer/Continue
 onready var start_button: Button = $"VBoxContainer/Start Game"
+onready var difficulty_button: Button = $VBoxContainer/Difficulty
 
 func _ready() -> void:
+	_update_difficulty_text()
+	$VBoxContainer/Endless.text = "Endless (Best %d)" % Game.get_best_score()
 	var first := start_button
 	if Checkpoint.last_position != null:
 		continue_button.show()
@@ -51,8 +55,20 @@ func _on_Continue_pressed() -> void:
 
 func _on_Start_Game_pressed() -> void:
 	Game.play_sfx(SelectSound)
-	Checkpoint.last_position = null
+	Checkpoint.reset()
 	Game.change_scene("res://audio and videos/video/VideoPlayer.tscn")
+
+func _on_Endless_pressed() -> void:
+	Game.play_sfx(SelectSound)
+	Game.change_scene(ENDLESS_SCENE)
+
+func _on_Difficulty_pressed() -> void:
+	Game.play_sfx(SelectSound)
+	Game.set_difficulty((Game.get_difficulty() + 1) % Game.DIFFICULTY_NAMES.size())
+	_update_difficulty_text()
+
+func _update_difficulty_text() -> void:
+	difficulty_button.text = "Difficulty: " + Game.DIFFICULTY_NAMES[Game.get_difficulty()]
 
 func _on_Quit_Game_pressed() -> void:
 	get_tree().quit()

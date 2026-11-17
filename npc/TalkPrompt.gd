@@ -6,6 +6,7 @@ const BOB_HEIGHT := 2.0
 const BOB_SPEED := 4.0
 const FADE_TIME := 0.15
 
+var text := "Talk"
 var label := Label.new()
 var showing := false
 var time := 0.0
@@ -15,7 +16,7 @@ func _ready() -> void:
 	layer.layer = 40
 	add_child(layer)
 	label.theme = UITheme
-	label.text = "Talk" if OS.has_touchscreen_ui_hint() else "E  Talk"
+	label.text = text if OS.has_touchscreen_ui_hint() else "E  " + text
 	label.modulate.a = 0.0
 	layer.add_child(label)
 

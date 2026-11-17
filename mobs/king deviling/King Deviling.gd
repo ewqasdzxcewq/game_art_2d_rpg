@@ -9,10 +9,15 @@ const STOMP_RECOVERY := 0.8
 const STOMP_TINT := Color(1, 0.4, 0.4)
 const STOMP_FILL := Color(1, 0.15, 0.15, 0.25)
 const STOMP_EDGE := Color(1, 0.2, 0.2, 0.8)
+const ENRAGED_STOMP_COOLDOWN := 4.0
+const ENRAGED_SPEED_SCALE := 1.5
+const ENRAGED_ATTACK_COOLDOWN_SCALE := 0.6
+const ENRAGED_LABEL_OFFSET := Vector2(-60, -220)
 
 export(AudioStream) var boss_music
 
 var engaged := false
+var enraged := false
 var stomp_cooldown := STOMP_COOLDOWN
 var stomp_warning := 0.0 setget set_stomp_warning
 var stomp_tween: SceneTreeTween
@@ -46,7 +51,7 @@ func set_stomp_warning(value: float) -> void:
 func start_stomp() -> void:
 	state = ATTACK
 	velocity = Vector2.ZERO
-	stomp_cooldown = STOMP_COOLDOWN
+	stomp_cooldown = ENRAGED_STOMP_COOLDOWN if enraged else STOMP_COOLDOWN
 	_play("idle")
 	stomp_tween = create_tween()
 	stomp_tween.tween_property(self, "stomp_warning", 1.0, STOMP_WINDUP).from(0.0)
@@ -63,6 +68,17 @@ func stomp_impact() -> void:
 	stomp_shape.set_deferred("disabled", false)
 	Game.flash(sprite)
 	Game.shake(0.8)
+
+func _on_Hurtbox_area_entered(area: Area2D) -> void:
+	._on_Hurtbox_area_entered(area)
+	if dead or enraged or stats.health * 2 > stats.max_health:
+		return
+	enraged = true
+	max_speed = int(max_speed * ENRAGED_SPEED_SCALE)
+	attack_cooldown *= ENRAGED_ATTACK_COOLDOWN_SCALE
+	Game.flash(sprite, 0.5)
+	Game.shake(0.8)
+	Game.popup_label(global_position + ENRAGED_LABEL_OFFSET, "The King is enraged!", STOMP_TINT)
 
 func die() -> void:
 	if stomp_tween != null:

@@ -29,6 +29,8 @@ func _physics_process(delta: float) -> void:
 func start_sprint() -> void:
 	sprint_time = SPRINT_TIME
 	max_speed = int(base_speed * SPRINT_SPEED_SCALE)
+	receives_knockback = false
+	knockback = Vector2.ZERO
 	sprite.modulate = SPRINT_TINT
 	Game.flash(sprite)
 
@@ -36,6 +38,7 @@ func end_sprint() -> void:
 	sprint_time = 0.0
 	sprint_cooldown = SPRINT_COOLDOWN
 	max_speed = base_speed
+	receives_knockback = true
 	sprite.modulate = Color.white
 
 func start_attack(player: Node2D) -> void:

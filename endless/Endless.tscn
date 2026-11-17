@@ -1,0 +1,338 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://endless/Endless.gd" type="Script" id=1]
+[ext_resource path="res://assets/tileset/Tileset16x16/DesertTilemapBlankBackground.png" type="Texture" id=2]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/ShakeCamera.gd" type="Script" id=4]
+[ext_resource path="res://effects/AmbientParticles.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Tree/tree.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Tree/Cut Trees.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/player ui/HealthUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scripts/MusicCue.gd" type="Script" id=10]
+[ext_resource path="res://audio and videos/Wadaiko Matsuriza - Kabuki Gomen-Jyo [Japanese drums].ogg" type="AudioStream" id=11]
+[ext_resource path="res://UI/theme.tres" type="Theme" id=12]
+[ext_resource path="res://effects/Vignette.tscn" type="PackedScene" id=13]
+[ext_resource path="res://effects/world_env.tres" type="Environment" id=14]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Sand"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 16, 16, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Plants"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 48, 48, 144, 16 )
+1/tile_mode = 2
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Pebbles"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 48, 64, 128, 16 )
+2/tile_mode = 2
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 16, 16 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 512, 16 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 352 )
+
+[node name="Endless" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="WorldTint" type="CanvasModulate" parent="." groups=[ "world_tint" ]]
+color = Color( 1, 0.92, 0.82, 1 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 14 )
+
+[node name="Floor" type="TileMap" parent="."]
+z_index = -1
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
+[node name="Decor" type="TileMap" parent="Floor"]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
+[node name="Middleground" type="YSort" parent="."]
+
+[node name="Props" type="YSort" parent="Middleground"]
+
+[node name="TopTree" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 32, 40 )
+
+[node name="TopTree2" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 96, 40 )
+
+[node name="TopTree3" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 160, 40 )
+
+[node name="TopTree4" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 224, 40 )
+
+[node name="TopTree5" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 288, 40 )
+
+[node name="TopTree6" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 352, 40 )
+
+[node name="TopTree7" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 416, 40 )
+
+[node name="TopTree8" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 480, 40 )
+
+[node name="TopTree9" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 544, 40 )
+
+[node name="TopTree10" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 608, 40 )
+
+[node name="TopTree11" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 672, 40 )
+
+[node name="TopTree12" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 736, 40 )
+
+[node name="TopTree13" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 800, 40 )
+
+[node name="TopTree14" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 864, 40 )
+
+[node name="TopTree15" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 928, 40 )
+
+[node name="BottomTree" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 32, 632 )
+
+[node name="BottomTree2" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 96, 632 )
+
+[node name="BottomTree3" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 160, 632 )
+
+[node name="BottomTree4" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 224, 632 )
+
+[node name="BottomTree5" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 288, 632 )
+
+[node name="BottomTree6" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 352, 632 )
+
+[node name="BottomTree7" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 416, 632 )
+
+[node name="BottomTree8" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 480, 632 )
+
+[node name="BottomTree9" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 544, 632 )
+
+[node name="BottomTree10" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 608, 632 )
+
+[node name="BottomTree11" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 672, 632 )
+
+[node name="BottomTree12" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 736, 632 )
+
+[node name="BottomTree13" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 800, 632 )
+
+[node name="BottomTree14" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 864, 632 )
+
+[node name="BottomTree15" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 928, 632 )
+
+[node name="LeftTree" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 104 )
+
+[node name="LeftTree2" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 168 )
+
+[node name="LeftTree3" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 232 )
+
+[node name="LeftTree4" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 296 )
+
+[node name="LeftTree5" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 360 )
+
+[node name="LeftTree6" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 424 )
+
+[node name="LeftTree7" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 488 )
+
+[node name="LeftTree8" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 20, 552 )
+
+[node name="RightTree" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 104 )
+
+[node name="RightTree2" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 168 )
+
+[node name="RightTree3" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 232 )
+
+[node name="RightTree4" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 296 )
+
+[node name="RightTree5" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 360 )
+
+[node name="RightTree6" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 424 )
+
+[node name="RightTree7" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 488 )
+
+[node name="RightTree8" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 940, 552 )
+
+[node name="CoverTree" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 176, 336 )
+
+[node name="CoverTree2" parent="Middleground/Props" instance=ExtResource( 6 )]
+position = Vector2( 784, 336 )
+
+[node name="Stump" parent="Middleground/Props" instance=ExtResource( 7 )]
+position = Vector2( 288, 200 )
+
+[node name="Stump2" parent="Middleground/Props" instance=ExtResource( 7 )]
+position = Vector2( 672, 200 )
+
+[node name="Stump3" parent="Middleground/Props" instance=ExtResource( 7 )]
+position = Vector2( 288, 480 )
+
+[node name="Stump4" parent="Middleground/Props" instance=ExtResource( 7 )]
+position = Vector2( 672, 480 )
+
+[node name="Mobs" type="YSort" parent="Middleground"]
+
+[node name="Player" parent="Middleground" instance=ExtResource( 3 )]
+position = Vector2( 480, 340 )
+use_checkpoint = false
+
+[node name="Camera2D" type="Camera2D" parent="Middleground/Player"]
+current = true
+process_mode = 0
+limit_left = 0
+limit_top = 0
+limit_right = 960
+limit_bottom = 640
+smoothing_enabled = true
+smoothing_speed = 10.0
+script = ExtResource( 4 )
+
+[node name="AmbientParticles" parent="Middleground/Player/Camera2D" instance=ExtResource( 5 )]
+
+[node name="Border" type="StaticBody2D" parent="."]
+
+[node name="Top" type="CollisionShape2D" parent="Border"]
+position = Vector2( 480, -16 )
+shape = SubResource( 2 )
+
+[node name="Bottom" type="CollisionShape2D" parent="Border"]
+position = Vector2( 480, 656 )
+shape = SubResource( 2 )
+
+[node name="Left" type="CollisionShape2D" parent="Border"]
+position = Vector2( -16, 320 )
+shape = SubResource( 3 )
+
+[node name="Right" type="CollisionShape2D" parent="Border"]
+position = Vector2( 976, 320 )
+shape = SubResource( 3 )
+
+[node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="Vignette" parent="." instance=ExtResource( 13 )]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 8 )]
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -160.0
+margin_top = 6.0
+margin_right = 160.0
+margin_bottom = 22.0
+theme = ExtResource( 12 )
+align = 1
+
+[node name="Banner" type="Label" parent="CanvasLayer"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -72.0
+margin_right = 160.0
+margin_bottom = -32.0
+theme = ExtResource( 12 )
+align = 1
+valign = 1
+
+[node name="Music" type="Node" parent="."]
+script = ExtResource( 10 )
+music = ExtResource( 11 )
+
+[node name="Pause" parent="." instance=ExtResource( 9 )]
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]
