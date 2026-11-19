@@ -42,6 +42,9 @@ onready var wander_controller = $WanderController
 onready var hitbox_collision: CollisionShape2D = $Hitbox/CollisionShape2D
 
 func _ready() -> void:
+	animation_tree.active = true
+	# Activation resets the state machine on the tree's next process; flush it now so the first _play() sticks.
+	animation_tree.advance(0)
 	state = pick_random_state([IDLE, WANDER])
 	if Game.get_difficulty() == Game.INSANE:
 		stats.max_health *= INSANE_HEALTH_SCALE

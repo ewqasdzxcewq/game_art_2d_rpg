@@ -59,6 +59,7 @@ blend_point_2/node = SubResource( 36 )
 blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 37 )
 blend_point_3/pos = Vector2( 0, -0.8 )
+blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=38]
 animation = "idle"
@@ -166,6 +167,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 1 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
 
 [sub_resource type="Animation" id=48]
 resource_name = "defeat"
@@ -196,6 +209,18 @@ tracks/1/keys = {
 "method": "ending_scene"
 } ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ Vector2( 0, 0 ) ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "idle"
@@ -213,6 +238,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 4 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ Vector2( 0, 0 ) ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "run"
@@ -229,6 +266,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 1, 2, 3, 4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ Vector2( 0, 0 ) ]
 }
 
 [sub_resource type="Animation" id=56]
@@ -283,6 +332,18 @@ tracks/3/keys = {
 "args": [  ],
 "method": "attack_animation_finished"
 } ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimatedSprite:offset")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ Vector2( 0, -42 ) ]
 }
 
 [sub_resource type="CircleShape2D" id=6]
@@ -376,12 +437,11 @@ max_health = 20
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
 rect = Rect2( -288, -408, 584, 506 )
+pause_animated_sprites = false
 physics_process_parent = true
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
-[connection signal="screen_entered" from="VisibilityEnabler2D" to="AnimationTree" method="set_active" binds= [ true ]]
-[connection signal="screen_exited" from="VisibilityEnabler2D" to="AnimationTree" method="set_active" binds= [ false ]]
 
 [editable path="Hurtbox"]
 [editable path="PlayerDetectionZone"]

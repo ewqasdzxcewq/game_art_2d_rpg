@@ -65,6 +65,8 @@ func _ready() -> void:
 	hurtbox.connect("invincibility_started", self, "_on_invincibility_started")
 	hurtbox.connect("invincibility_ended", self, "_on_invincibility_ended")
 	animation_tree.active = true
+	# Activation resets the state machine on the tree's next process; flush it now so the first _play() sticks.
+	animation_tree.advance(0)
 	_face(dash_vector)
 	reset_physics_interpolation()
 	apply_upgrades()
